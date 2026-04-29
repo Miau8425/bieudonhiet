@@ -1,0 +1,921 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red107\green0\blue1;\red255\green255\blue255;\red18\green82\blue31;
+\red24\green24\blue24;\red220\green0\blue5;\red0\green0\blue255;\red0\green0\blue0;\red9\green60\blue148;
+\red91\green100\blue110;\red19\green118\blue70;\red101\green76\blue29;\red11\green34\blue86;\red157\green0\blue210;
+\red10\green58\blue158;\red109\green51\blue215;\red194\green11\blue35;\red24\green26\blue30;\red0\green0\blue109;
+\red129\green40\blue2;}
+{\*\expandedcolortbl;;\cssrgb\c50196\c0\c0;\cssrgb\c100000\c100000\c100000;\cssrgb\c6667\c38824\c16078;
+\cssrgb\c12549\c12549\c12549;\cssrgb\c89804\c0\c0;\cssrgb\c0\c0\c100000;\cssrgb\c0\c0\c0;\cssrgb\c1569\c31765\c64706;
+\cssrgb\c43137\c46667\c50588;\cssrgb\c3529\c52549\c34510;\cssrgb\c47451\c36863\c14902;\cssrgb\c3922\c18824\c41176;\cssrgb\c68627\c0\c85882;
+\cssrgb\c1961\c31373\c68235;\cssrgb\c50980\c31373\c87451;\cssrgb\c81176\c13333\c18039;\cssrgb\c12157\c13725\c15686;\cssrgb\c0\c6275\c50196;
+\cssrgb\c58431\c21961\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf2 \cb3 \expnd0\expndtw0\kerning0
+<!\cf4 DOCTYPE\cf5  \cf6 html\cf2 >\cf5 \cb1 \
+\cf2 \cb3 <\cf4 html\cf5  \cf6 lang\cf5 =\cf7 "vi"\cf2 >\cf5 \cb1 \
+\cf2 \cb3 <\cf4 head\cf2 >\cf5 \cb1 \
+\cf2 \cb3 <\cf4 meta\cf5  \cf6 charset\cf5 =\cf7 "UTF-8"\cf2 >\cf5 \cb1 \
+\cf2 \cb3 <\cf4 meta\cf5  \cf6 name\cf5 =\cf7 "viewport"\cf5  \cf6 content\cf5 =\cf7 "width=device-width, initial-scale=1.0"\cf2 >\cf5 \cb1 \
+\cf2 \cb3 <\cf4 title\cf2 >\cf5 Di C\uc0\u432  N\u7897 i \u272 \u7883 a Vi\u7879 t Nam 2014\'962024\cf2 </\cf4 title\cf2 >\cf5 \cb1 \
+\cf2 \cb3 <\cf4 link\cf5  \cf6 rel\cf5 =\cf7 "preconnect"\cf5  \cf6 href\cf5 =\cf7 "https://fonts.googleapis.com"\cf2 >\cf5 \cb1 \
+\cf2 \cb3 <\cf4 link\cf5  \cf6 href\cf5 =\cf7 "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400&family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap"\cf5  \cf6 rel\cf5 =\cf7 "stylesheet"\cf2 >\cf5 \cb1 \
+\cf2 \cb3 <\cf4 style\cf2 >\cf5 \cb1 \
+\cf2 \cb3 :root\cf5  \{\cb1 \
+\cb3   \cf6 --bg\cf5 : \cf9 #07090f\cf5 ;\cb1 \
+\cb3   \cf6 --surface\cf5 : \cf9 #0d1120\cf5 ;\cb1 \
+\cb3   \cf6 --card\cf5 : \cf9 #111827\cf5 ;\cb1 \
+\cb3   \cf6 --border\cf5 : \cf9 #1e2d4a\cf5 ;\cb1 \
+\cb3   \cf6 --text\cf5 : \cf9 #dde6f5\cf5 ;\cb1 \
+\cb3   \cf6 --muted\cf5 : \cf9 #5a7090\cf5 ;\cb1 \
+\cb3   \cf6 --gold\cf5 : \cf9 #c9a84c\cf5 ;\cb1 \
+\cb3   \cf6 --gold-light\cf5 : \cf9 #e8c87a\cf5 ;\cb1 \
+\cb3   \cb1 \
+\cb3   \cf10 /* Orange Palette for both periods */\cf5 \cb1 \
+\cb3   \cf6 --o-hi\cf5 : \cf9 #e65100\cf5 ;\cb1 \
+\cb3   \cf6 --o-mid\cf5 : \cf9 #ff9800\cf5 ;\cb1 \
+\cb3   \cf6 --o-lo\cf5 : \cf9 #ffe0b2\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\
+\cf4 \cb3 *\cf5  \{ \cf6 margin\cf5 : \cf11 0\cf5 ; \cf6 padding\cf5 : \cf11 0\cf5 ; \cf6 box-sizing\cf5 : \cf9 border-box\cf5 ; \}\cb1 \
+\
+\cf4 \cb3 html\cf5  \{ \cf6 scroll-behavior\cf5 : \cf9 smooth\cf5 ; \}\cb1 \
+\
+\cf4 \cb3 body\cf5  \{\cb1 \
+\cb3   \cf6 background\cf5 : \cf12 var\cf5 (\cf6 --bg\cf5 );\cb1 \
+\cb3   \cf6 color\cf5 : \cf12 var\cf5 (\cf6 --text\cf5 );\cb1 \
+\cb3   \cf6 font-family\cf5 : \cf13 'Be Vietnam Pro'\cf5 , \cf9 sans-serif\cf5 ;\cb1 \
+\cb3   \cf6 min-height\cf5 : \cf11 100vh\cf5 ;\cb1 \
+\cb3   \cf6 overflow-x\cf5 : \cf9 hidden\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 /* \uc0\u9472 \u9472  HEADER \u9472 \u9472  */\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 .header\cf5  \{\cb1 \
+\cb3   \cf6 text-align\cf5 : \cf9 center\cf5 ;\cb1 \
+\cb3   \cf6 padding\cf5 : \cf11 3.5rem\cf5  \cf11 2rem\cf5  \cf11 1.5rem\cf5 ;\cb1 \
+\cb3   \cf6 position\cf5 : \cf9 relative\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .header\cf5  \cf4 h1\cf5  \{\cb1 \
+\cb3   \cf6 font-family\cf5 : \cf13 'Cormorant Garamond'\cf5 , \cf9 serif\cf5 ;\cb1 \
+\cb3   \cf6 font-size\cf5 : \cf12 clamp\cf5 (\cf11 2rem\cf5 , \cf11 5vw\cf5 , \cf11 4rem\cf5 );\cb1 \
+\cb3   \cf6 font-weight\cf5 : \cf11 700\cf5 ;\cb1 \
+\cb3   \cf6 line-height\cf5 : \cf11 1.12\cf5 ;\cb1 \
+\cb3   \cf6 color\cf5 : \cf9 #fff\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .header\cf5  \cf4 h1\cf5  \cf4 em\cf5  \{\cb1 \
+\cb3   \cf6 font-style\cf5 : \cf9 italic\cf5 ;\cb1 \
+\cb3   \cf6 color\cf5 : \cf12 var\cf5 (\cf6 --gold-light\cf5 );\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .header-sub\cf5  \{\cb1 \
+\cb3   \cf6 margin-top\cf5 : \cf11 0.8rem\cf5 ;\cb1 \
+\cb3   \cf6 font-size\cf5 : \cf11 0.82rem\cf5 ;\cb1 \
+\cb3   \cf6 color\cf5 : \cf12 var\cf5 (\cf6 --muted\cf5 );\cb1 \
+\cb3   \cf6 letter-spacing\cf5 : \cf11 0.04em\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .header-rule\cf5  \{\cb1 \
+\cb3   \cf6 width\cf5 : \cf11 48px\cf5 ;\cb1 \
+\cb3   \cf6 height\cf5 : \cf11 2px\cf5 ;\cb1 \
+\cb3   \cf6 background\cf5 : \cf12 var\cf5 (\cf6 --gold\cf5 );\cb1 \
+\cb3   \cf6 margin\cf5 : \cf11 1.4rem\cf5  \cf9 auto\cf5  \cf11 0\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 /* \uc0\u9472 \u9472  PERIOD TABS \u9472 \u9472  */\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 .period-tabs\cf5  \{\cb1 \
+\cb3   \cf6 display\cf5 : \cf9 flex\cf5 ;\cb1 \
+\cb3   \cf6 align-items\cf5 : \cf9 center\cf5 ;\cb1 \
+\cb3   \cf6 justify-content\cf5 : \cf9 center\cf5 ;\cb1 \
+\cb3   \cf6 gap\cf5 : \cf11 0\cf5 ;\cb1 \
+\cb3   \cf6 padding\cf5 : \cf11 2rem\cf5  \cf11 0\cf5  \cf11 0\cf5 ;\cb1 \
+\cb3   \cf6 position\cf5 : \cf9 relative\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .tab-btn\cf5  \{\cb1 \
+\cb3   \cf6 background\cf5 : \cf9 none\cf5 ;\cb1 \
+\cb3   \cf6 border\cf5 : \cf11 1px\cf5  \cf9 solid\cf5  \cf12 var\cf5 (\cf6 --border\cf5 );\cb1 \
+\cb3   \cf6 color\cf5 : \cf12 var\cf5 (\cf6 --muted\cf5 );\cb1 \
+\cb3   \cf6 font-family\cf5 : \cf13 'Cormorant Garamond'\cf5 , \cf9 serif\cf5 ;\cb1 \
+\cb3   \cf6 font-size\cf5 : \cf11 1.35rem\cf5 ;\cb1 \
+\cb3   \cf6 font-weight\cf5 : \cf11 600\cf5 ;\cb1 \
+\cb3   \cf6 padding\cf5 : \cf11 0.6rem\cf5  \cf11 2.2rem\cf5 ;\cb1 \
+\cb3   \cf6 cursor\cf5 : \cf9 pointer\cf5 ;\cb1 \
+\cb3   \cf6 transition\cf5 : \cf9 all\cf5  \cf11 0.35s\cf5  \cf9 ease\cf5 ;\cb1 \
+\cb3   \cf6 position\cf5 : \cf9 relative\cf5 ;\cb1 \
+\cb3   \cf6 z-index\cf5 : \cf11 1\cf5 ;\cb1 \
+\cb3   \cf6 letter-spacing\cf5 : \cf11 0.04em\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .tab-btn:first-child\cf5  \{ \cf6 border-right\cf5 : \cf9 none\cf5 ; \cf6 border-radius\cf5 : \cf11 3px\cf5  \cf11 0\cf5  \cf11 0\cf5  \cf11 3px\cf5 ; \}\cb1 \
+\cf2 \cb3 .tab-btn:last-child\cf5   \{ \cf6 border-left\cf5 : \cf9 none\cf5 ;  \cf6 border-radius\cf5 : \cf11 0\cf5  \cf11 3px\cf5  \cf11 3px\cf5  \cf11 0\cf5 ; \}\cb1 \
+\cf2 \cb3 .tab-btn.active\cf5  \{\cb1 \
+\cb3   \cf6 color\cf5 : \cf12 var\cf5 (\cf6 --gold\cf5 );\cb1 \
+\cb3   \cf6 border-color\cf5 : \cf12 var\cf5 (\cf6 --gold\cf5 );\cb1 \
+\cb3   \cf6 background\cf5 : \cf12 rgba\cf5 (\cf11 201\cf5 ,\cf11 168\cf5 ,\cf11 76\cf5 ,\cf11 0.07\cf5 );\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .tab-divider\cf5  \{\cb1 \
+\cb3   \cf6 width\cf5 : \cf11 1px\cf5 ;\cb1 \
+\cb3   \cf6 height\cf5 : \cf11 28px\cf5 ;\cb1 \
+\cb3   \cf6 background\cf5 : \cf12 var\cf5 (\cf6 --border\cf5 );\cb1 \
+\cb3 \}\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 /* \uc0\u9472 \u9472  SLIDE WRAPPER \u9472 \u9472  */\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 .slider-outer\cf5  \{\cb1 \
+\cb3   \cf6 width\cf5 : \cf11 100%\cf5 ;\cb1 \
+\cb3   \cf6 overflow\cf5 : \cf9 hidden\cf5 ;\cb1 \
+\cb3   \cf6 position\cf5 : \cf9 relative\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .slider-track\cf5  \{\cb1 \
+\cb3   \cf6 display\cf5 : \cf9 flex\cf5 ;\cb1 \
+\cb3   \cf6 width\cf5 : \cf11 200%\cf5 ;\cb1 \
+\cb3   \cf6 transition\cf5 : transform \cf11 0.75s\cf5  \cf12 cubic-bezier\cf5 (\cf11 0.45\cf5 , \cf11 0\cf5 , \cf11 0.15\cf5 , \cf11 1\cf5 );\cb1 \
+\cb3   \cf6 will-change\cf5 : transform;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .slide\cf5  \{\cb1 \
+\cb3   \cf6 width\cf5 : \cf11 50%\cf5 ;\cb1 \
+\cb3   \cf6 display\cf5 : \cf9 flex\cf5 ;\cb1 \
+\cb3   \cf6 flex-direction\cf5 : \cf9 column\cf5 ;\cb1 \
+\cb3   \cf6 align-items\cf5 : \cf9 center\cf5 ;\cb1 \
+\cb3   \cf6 padding\cf5 : \cf11 2rem\cf5  \cf11 1rem\cf5  \cf11 3rem\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 /* \uc0\u9472 \u9472  PERIOD HEADER INSIDE SLIDE \u9472 \u9472  */\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 .period-header\cf5  \{\cb1 \
+\cb3   \cf6 text-align\cf5 : \cf9 center\cf5 ;\cb1 \
+\cb3   \cf6 margin-bottom\cf5 : \cf11 1.2rem\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .period-title\cf5  \{\cb1 \
+\cb3   \cf6 font-family\cf5 : \cf13 'Cormorant Garamond'\cf5 , \cf9 serif\cf5 ;\cb1 \
+\cb3   \cf6 font-size\cf5 : \cf11 2.2rem\cf5 ;\cb1 \
+\cb3   \cf6 font-weight\cf5 : \cf11 700\cf5 ;\cb1 \
+\cb3   \cf6 letter-spacing\cf5 : \cf11 0.06em\cf5 ;\cb1 \
+\cb3   \cf6 color\cf5 : \cf9 #fff\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .period-title.orange\cf5  \{ \cf6 color\cf5 : \cf12 var\cf5 (\cf6 --o-mid\cf5 ); \}\cb1 \
+\cf2 \cb3 .period-desc\cf5  \{\cb1 \
+\cb3   \cf6 margin-top\cf5 : \cf11 0.4rem\cf5 ;\cb1 \
+\cb3   \cf6 font-size\cf5 : \cf11 0.8rem\cf5 ;\cb1 \
+\cb3   \cf6 color\cf5 : \cf12 var\cf5 (\cf6 --muted\cf5 );\cb1 \
+\cb3   \cf6 max-width\cf5 : \cf11 380px\cf5 ;\cb1 \
+\cb3   \cf6 line-height\cf5 : \cf11 1.55\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .kpi-row\cf5  \{\cb1 \
+\cb3   \cf6 display\cf5 : \cf9 flex\cf5 ;\cb1 \
+\cb3   \cf6 gap\cf5 : \cf11 2.5rem\cf5 ;\cb1 \
+\cb3   \cf6 justify-content\cf5 : \cf9 center\cf5 ;\cb1 \
+\cb3   \cf6 margin\cf5 : \cf11 1rem\cf5  \cf11 0\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .kpi\cf5  \{\cb1 \
+\cb3   \cf6 text-align\cf5 : \cf9 center\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .kpi-val\cf5  \{\cb1 \
+\cb3   \cf6 font-family\cf5 : \cf13 'Cormorant Garamond'\cf5 , \cf9 serif\cf5 ;\cb1 \
+\cb3   \cf6 font-size\cf5 : \cf11 1.9rem\cf5 ;\cb1 \
+\cb3   \cf6 font-weight\cf5 : \cf11 700\cf5 ;\cb1 \
+\cb3   \cf6 color\cf5 : \cf9 #fff\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .kpi-val.orange\cf5  \{ \cf6 color\cf5 : \cf12 var\cf5 (\cf6 --o-mid\cf5 ); \}\cb1 \
+\cf2 \cb3 .kpi-lbl\cf5  \{\cb1 \
+\cb3   \cf6 font-size\cf5 : \cf11 0.68rem\cf5 ;\cb1 \
+\cb3   \cf6 text-transform\cf5 : \cf9 uppercase\cf5 ;\cb1 \
+\cb3   \cf6 letter-spacing\cf5 : \cf11 0.08em\cf5 ;\cb1 \
+\cb3   \cf6 color\cf5 : \cf12 var\cf5 (\cf6 --muted\cf5 );\cb1 \
+\cb3 \}\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 /* \uc0\u9472 \u9472  MAP SVG \u9472 \u9472  */\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 .map-wrapper\cf5  \{\cb1 \
+\cb3   \cf6 position\cf5 : \cf9 relative\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .map-svg\cf5  \{\cb1 \
+\cb3   \cf6 display\cf5 : \cf9 block\cf5 ;\cb1 \
+\cb3   \cf6 overflow\cf5 : \cf9 visible\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .vn-land\cf5  \{\cb1 \
+\cb3   \cf6 fill\cf5 : \cf9 #0f1d35\cf5 ;\cb1 \
+\cb3   \cf6 stroke\cf5 : \cf9 #1e3a6e\cf5 ;\cb1 \
+\cb3   \cf6 stroke-width\cf5 : \cf11 1\cf5 ;\cb1 \
+\cb3   \cf6 filter\cf5 : \cf12 drop-shadow\cf5 (\cf11 0\cf5  \cf11 0\cf5  \cf11 20px\cf5  \cf12 rgba\cf5 (\cf11 0\cf5 ,\cf11 20\cf5 ,\cf11 60\cf5 ,\cf11 0.6\cf5 ));\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .vn-grid\cf5  \{\cb1 \
+\cb3   \cf6 stroke\cf5 : \cf12 rgba\cf5 (\cf11 255\cf5 ,\cf11 255\cf5 ,\cf11 255\cf5 ,\cf11 0.035\cf5 );\cb1 \
+\cb3   \cf6 stroke-width\cf5 : \cf11 0.5\cf5 ;\cb1 \
+\cb3   \cf6 fill\cf5 : \cf9 none\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .prov-group\cf5  \{\cb1 \
+\cb3   \cf6 cursor\cf5 : \cf9 pointer\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .prov-outer-glow\cf5  \{ \cf6 pointer-events\cf5 : \cf9 none\cf5 ; \}\cb1 \
+\cf2 \cb3 .prov-ring\cf5  \{\cb1 \
+\cb3   \cf6 fill\cf5 : \cf9 none\cf5 ;\cb1 \
+\cb3   \cf6 pointer-events\cf5 : \cf9 none\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .prov-dot\cf5  \{\cb1 \
+\cb3   \cf6 transition\cf5 : r \cf11 0.2s\cf5  \cf9 ease\cf5 , opacity \cf11 0.2s\cf5  \cf9 ease\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .prov-group:hover\cf5  \cf2 .prov-dot\cf5  \{\cb1 \
+\cb3   \cf6 r\cf5 : \cf12 var\cf5 (\cf6 --hover-r\cf5 );\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .prov-label-name\cf5  \{\cb1 \
+\cb3   \cf6 font-family\cf5 : \cf13 'Be Vietnam Pro'\cf5 , \cf9 sans-serif\cf5 ;\cb1 \
+\cb3   \cf6 font-size\cf5 : \cf11 8.5px\cf5 ;\cb1 \
+\cb3   \cf6 font-weight\cf5 : \cf11 600\cf5 ;\cb1 \
+\cb3   \cf6 fill\cf5 : \cf9 #b8cee8\cf5 ;\cb1 \
+\cb3   \cf6 pointer-events\cf5 : \cf9 none\cf5 ;\cb1 \
+\cb3   \cf6 letter-spacing\cf5 : \cf11 0.3px\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .prov-label-val\cf5  \{\cb1 \
+\cb3   \cf6 font-family\cf5 : \cf13 'Be Vietnam Pro'\cf5 , \cf9 sans-serif\cf5 ;\cb1 \
+\cb3   \cf6 font-size\cf5 : \cf11 9px\cf5 ;\cb1 \
+\cb3   \cf6 font-weight\cf5 : \cf11 600\cf5 ;\cb1 \
+\cb3   \cf6 fill\cf5 : \cf9 #fff\cf5 ;\cb1 \
+\cb3   \cf6 pointer-events\cf5 : \cf9 none\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 /* \uc0\u9472 \u9472  LEGEND \u9472 \u9472  */\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 .legend-row\cf5  \{\cb1 \
+\cb3   \cf6 display\cf5 : \cf9 flex\cf5 ;\cb1 \
+\cb3   \cf6 align-items\cf5 : \cf9 center\cf5 ;\cb1 \
+\cb3   \cf6 gap\cf5 : \cf11 0.5rem\cf5 ;\cb1 \
+\cb3   \cf6 margin-top\cf5 : \cf11 1rem\cf5 ;\cb1 \
+\cb3   \cf6 justify-content\cf5 : \cf9 center\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .legend-bar\cf5  \{\cb1 \
+\cb3   \cf6 width\cf5 : \cf11 110px\cf5 ;\cb1 \
+\cb3   \cf6 height\cf5 : \cf11 7px\cf5 ;\cb1 \
+\cb3   \cf6 border-radius\cf5 : \cf11 4px\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 /* \uc0\u9472 \u9472  HINT \u9472 \u9472  */\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 .swipe-hint\cf5  \{\cb1 \
+\cb3   \cf6 margin-top\cf5 : \cf11 0.8rem\cf5 ;\cb1 \
+\cb3   \cf6 font-size\cf5 : \cf11 0.72rem\cf5 ;\cb1 \
+\cb3   \cf6 color\cf5 : \cf12 var\cf5 (\cf6 --muted\cf5 );\cb1 \
+\cb3   \cf6 letter-spacing\cf5 : \cf11 0.04em\cf5 ;\cb1 \
+\cb3   \cf6 display\cf5 : \cf9 flex\cf5 ;\cb1 \
+\cb3   \cf6 align-items\cf5 : \cf9 center\cf5 ;\cb1 \
+\cb3   \cf6 gap\cf5 : \cf11 0.4rem\cf5 ;\cb1 \
+\cb3   \cf6 animation\cf5 : breathe \cf11 2.5s\cf5  \cf9 ease-in-out\cf5  \cf9 infinite\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf14 \cb3 @keyframes\cf5  \cf6 breathe\cf5  \{\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3   \cf15 0%\cf5 ,\cf15 100%\cf5  \{ \cf6 opacity\cf5 : \cf11 0.5\cf5 ; \}\cb1 \
+\cb3   \cf15 50%\cf5       \{ \cf6 opacity\cf5 : \cf11 1\cf5 ; \}\cb1 \
+\cb3 \}\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 /* \uc0\u9472 \u9472  NAV \u9472 \u9472  */\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 .nav-row\cf5  \{\cb1 \
+\cb3   \cf6 display\cf5 : \cf9 flex\cf5 ;\cb1 \
+\cb3   \cf6 align-items\cf5 : \cf9 center\cf5 ;\cb1 \
+\cb3   \cf6 justify-content\cf5 : \cf9 center\cf5 ;\cb1 \
+\cb3   \cf6 gap\cf5 : \cf11 1.2rem\cf5 ;\cb1 \
+\cb3   \cf6 padding\cf5 : \cf11 1.2rem\cf5  \cf11 0\cf5  \cf11 2rem\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .nav-btn\cf5  \{\cb1 \
+\cb3   \cf6 background\cf5 : \cf9 none\cf5 ;\cb1 \
+\cb3   \cf6 border\cf5 : \cf11 1px\cf5  \cf9 solid\cf5  \cf12 var\cf5 (\cf6 --border\cf5 );\cb1 \
+\cb3   \cf6 color\cf5 : \cf12 var\cf5 (\cf6 --text\cf5 );\cb1 \
+\cb3   \cf6 width\cf5 : \cf11 42px\cf5 ; \cf6 height\cf5 : \cf11 42px\cf5 ;\cb1 \
+\cb3   \cf6 border-radius\cf5 : \cf11 50%\cf5 ;\cb1 \
+\cb3   \cf6 cursor\cf5 : \cf9 pointer\cf5 ;\cb1 \
+\cb3   \cf6 font-size\cf5 : \cf11 1.1rem\cf5 ;\cb1 \
+\cb3   \cf6 display\cf5 : \cf9 flex\cf5 ; \cf6 align-items\cf5 : \cf9 center\cf5 ; \cf6 justify-content\cf5 : \cf9 center\cf5 ;\cb1 \
+\cb3   \cf6 transition\cf5 : \cf9 all\cf5  \cf11 0.2s\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .nav-btn:hover:not\cf5 (\cf2 :disabled\cf5 ) \{ \cf6 border-color\cf5 : \cf12 var\cf5 (\cf6 --gold\cf5 ); \cf6 color\cf5 : \cf12 var\cf5 (\cf6 --gold\cf5 ); \}\cb1 \
+\cf2 \cb3 .nav-btn:disabled\cf5  \{ \cf6 opacity\cf5 : \cf11 0.25\cf5 ; \cf6 cursor\cf5 : \cf9 default\cf5 ; \}\cb1 \
+\cf2 \cb3 .nav-dots\cf5  \{\cb1 \
+\cb3   \cf6 display\cf5 : \cf9 flex\cf5 ;\cb1 \
+\cb3   \cf6 gap\cf5 : \cf11 0.5rem\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .nav-dot\cf5  \{\cb1 \
+\cb3   \cf6 width\cf5 : \cf11 6px\cf5 ; \cf6 height\cf5 : \cf11 6px\cf5 ;\cb1 \
+\cb3   \cf6 border-radius\cf5 : \cf11 50%\cf5 ;\cb1 \
+\cb3   \cf6 background\cf5 : \cf12 var\cf5 (\cf6 --border\cf5 );\cb1 \
+\cb3   \cf6 transition\cf5 : \cf9 all\cf5  \cf11 0.3s\cf5 ;\cb1 \
+\cb3   \cf6 cursor\cf5 : \cf9 pointer\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .nav-dot.active\cf5  \{\cb1 \
+\cb3   \cf6 background\cf5 : \cf12 var\cf5 (\cf6 --gold\cf5 );\cb1 \
+\cb3   \cf6 transform\cf5 : \cf12 scale\cf5 (\cf11 1.4\cf5 );\cb1 \
+\cb3 \}\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 /* \uc0\u9472 \u9472  TOOLTIP \u9472 \u9472  */\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 .tooltip\cf5  \{\cb1 \
+\cb3   \cf6 position\cf5 : \cf9 fixed\cf5 ;\cb1 \
+\cb3   \cf6 background\cf5 : \cf12 rgba\cf5 (\cf11 8\cf5 ,\cf11 12\cf5 ,\cf11 24\cf5 ,\cf11 0.96\cf5 );\cb1 \
+\cb3   \cf6 border\cf5 : \cf11 1px\cf5  \cf9 solid\cf5  \cf12 var\cf5 (\cf6 --border\cf5 );\cb1 \
+\cb3   \cf6 border-left\cf5 : \cf11 3px\cf5  \cf9 solid\cf5  \cf12 var\cf5 (\cf6 --o-mid\cf5 );\cb1 \
+\cb3   \cf6 padding\cf5 : \cf11 1rem\cf5  \cf11 1.2rem\cf5 ;\cb1 \
+\cb3   \cf6 border-radius\cf5 : \cf11 6px\cf5 ;\cb1 \
+\cb3   \cf6 pointer-events\cf5 : \cf9 none\cf5 ;\cb1 \
+\cb3   \cf6 z-index\cf5 : \cf11 300\cf5 ;\cb1 \
+\cb3   \cf6 opacity\cf5 : \cf11 0\cf5 ;\cb1 \
+\cb3   \cf6 transition\cf5 : opacity \cf11 0.18s\cf5 ;\cb1 \
+\cb3   \cf6 max-width\cf5 : \cf11 280px\cf5 ;\cb1 \
+\cb3   \cf6 backdrop-filter\cf5 : \cf12 blur\cf5 (\cf11 12px\cf5 );\cb1 \
+\cb3   \cf6 box-shadow\cf5 : \cf11 0\cf5  \cf11 8px\cf5  \cf11 32px\cf5  \cf12 rgba\cf5 (\cf11 0\cf5 ,\cf11 0\cf5 ,\cf11 0\cf5 ,\cf11 0.6\cf5 );\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .tooltip.show\cf5  \{ \cf6 opacity\cf5 : \cf11 1\cf5 ; \}\cb1 \
+\cf2 \cb3 .tt-line1\cf5  \{\cb1 \
+\cb3   \cf6 font-size\cf5 : \cf11 1.1rem\cf5 ;\cb1 \
+\cb3   \cf6 font-weight\cf5 : \cf11 700\cf5 ;\cb1 \
+\cb3   \cf6 color\cf5 : \cf12 var\cf5 (\cf6 --gold-light\cf5 );\cb1 \
+\cb3   \cf6 margin-bottom\cf5 : \cf11 0.4rem\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .tt-line2\cf5  \{\cb1 \
+\cb3   \cf6 font-size\cf5 : \cf11 0.85rem\cf5 ;\cb1 \
+\cb3   \cf6 color\cf5 : \cf9 #dde6f5\cf5 ;\cb1 \
+\cb3   \cf6 line-height\cf5 : \cf11 1.4\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .tt-hl\cf5  \{\cb1 \
+\cb3   \cf6 color\cf5 : \cf9 #ff5722\cf5 ; \cb1 \
+\cb3   \cf6 font-size\cf5 : \cf11 1.05rem\cf5 ;\cb1 \
+\cb3   \cf6 font-weight\cf5 : \cf11 800\cf5 ;\cb1 \
+\cb3   \cf6 background\cf5 : \cf12 rgba\cf5 (\cf11 255\cf5 , \cf11 87\cf5 , \cf11 34\cf5 , \cf11 0.15\cf5 );\cb1 \
+\cb3   \cf6 padding\cf5 : \cf11 2px\cf5  \cf11 5px\cf5 ;\cb1 \
+\cb3   \cf6 border-radius\cf5 : \cf11 4px\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 /* \uc0\u9472 \u9472  MODAL \u9472 \u9472  */\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 .modal-bg\cf5  \{\cb1 \
+\cb3   \cf6 position\cf5 : \cf9 fixed\cf5 ;\cb1 \
+\cb3   \cf6 inset\cf5 : \cf11 0\cf5 ;\cb1 \
+\cb3   \cf6 background\cf5 : \cf12 rgba\cf5 (\cf11 0\cf5 ,\cf11 0\cf5 ,\cf11 0\cf5 ,\cf11 0.72\cf5 );\cb1 \
+\cb3   \cf6 z-index\cf5 : \cf11 400\cf5 ;\cb1 \
+\cb3   \cf6 display\cf5 : \cf9 flex\cf5 ;\cb1 \
+\cb3   \cf6 align-items\cf5 : \cf9 center\cf5 ;\cb1 \
+\cb3   \cf6 justify-content\cf5 : \cf9 center\cf5 ;\cb1 \
+\cb3   \cf6 opacity\cf5 : \cf11 0\cf5 ;\cb1 \
+\cb3   \cf6 pointer-events\cf5 : \cf9 none\cf5 ;\cb1 \
+\cb3   \cf6 transition\cf5 : opacity \cf11 0.3s\cf5 ;\cb1 \
+\cb3   \cf6 backdrop-filter\cf5 : \cf12 blur\cf5 (\cf11 5px\cf5 );\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .modal-bg.open\cf5  \{\cb1 \
+\cb3   \cf6 opacity\cf5 : \cf11 1\cf5 ;\cb1 \
+\cb3   \cf6 pointer-events\cf5 : \cf9 all\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .modal\cf5  \{\cb1 \
+\cb3   \cf6 background\cf5 : \cf12 var\cf5 (\cf6 --card\cf5 );\cb1 \
+\cb3   \cf6 border\cf5 : \cf11 1px\cf5  \cf9 solid\cf5  \cf12 var\cf5 (\cf6 --border\cf5 );\cb1 \
+\cb3   \cf6 border-top\cf5 : \cf11 2px\cf5  \cf9 solid\cf5  \cf12 var\cf5 (\cf6 --gold\cf5 );\cb1 \
+\cb3   \cf6 border-radius\cf5 : \cf11 10px\cf5 ;\cb1 \
+\cb3   \cf6 padding\cf5 : \cf11 2rem\cf5  \cf11 2rem\cf5  \cf11 1.8rem\cf5 ;\cb1 \
+\cb3   \cf6 max-width\cf5 : \cf11 480px\cf5 ;\cb1 \
+\cb3   \cf6 width\cf5 : \cf11 92%\cf5 ;\cb1 \
+\cb3   \cf6 position\cf5 : \cf9 relative\cf5 ;\cb1 \
+\cb3   \cf6 transform\cf5 : \cf12 translateY\cf5 (\cf11 24px\cf5 ) \cf12 scale\cf5 (\cf11 0.97\cf5 );\cb1 \
+\cb3   \cf6 transition\cf5 : transform \cf11 0.3s\cf5  \cf12 cubic-bezier\cf5 (\cf11 0.34\cf5 ,\cf11 1.56\cf5 ,\cf11 0.64\cf5 ,\cf11 1\cf5 );\cb1 \
+\cb3   \cf6 box-shadow\cf5 : \cf11 0\cf5  \cf11 24px\cf5  \cf11 60px\cf5  \cf12 rgba\cf5 (\cf11 0\cf5 ,\cf11 0\cf5 ,\cf11 0\cf5 ,\cf11 0.7\cf5 );\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .modal-bg.open\cf5  \cf2 .modal\cf5  \{ \cf6 transform\cf5 : \cf12 translateY\cf5 (\cf11 0\cf5 ) \cf12 scale\cf5 (\cf11 1\cf5 ); \}\cb1 \
+\cf2 \cb3 .modal-close\cf5  \{\cb1 \
+\cb3   \cf6 position\cf5 : \cf9 absolute\cf5 ;\cb1 \
+\cb3   \cf6 top\cf5 : \cf11 1rem\cf5 ; \cf6 right\cf5 : \cf11 1rem\cf5 ;\cb1 \
+\cb3   \cf6 background\cf5 : \cf9 none\cf5 ;\cb1 \
+\cb3   \cf6 border\cf5 : \cf11 1px\cf5  \cf9 solid\cf5  \cf12 var\cf5 (\cf6 --border\cf5 );\cb1 \
+\cb3   \cf6 color\cf5 : \cf12 var\cf5 (\cf6 --muted\cf5 );\cb1 \
+\cb3   \cf6 width\cf5 : \cf11 28px\cf5 ; \cf6 height\cf5 : \cf11 28px\cf5 ;\cb1 \
+\cb3   \cf6 border-radius\cf5 : \cf11 50%\cf5 ;\cb1 \
+\cb3   \cf6 cursor\cf5 : \cf9 pointer\cf5 ;\cb1 \
+\cb3   \cf6 font-size\cf5 : \cf11 0.9rem\cf5 ;\cb1 \
+\cb3   \cf6 display\cf5 : \cf9 flex\cf5 ; \cf6 align-items\cf5 : \cf9 center\cf5 ; \cf6 justify-content\cf5 : \cf9 center\cf5 ;\cb1 \
+\cb3   \cf6 transition\cf5 : \cf9 all\cf5  \cf11 0.2s\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .modal-close:hover\cf5  \{ \cf6 border-color\cf5 : \cf12 var\cf5 (\cf6 --gold\cf5 ); \cf6 color\cf5 : \cf12 var\cf5 (\cf6 --gold\cf5 ); \}\cb1 \
+\cf2 \cb3 .modal-city\cf5  \{\cb1 \
+\cb3   \cf6 font-family\cf5 : \cf13 'Cormorant Garamond'\cf5 , \cf9 serif\cf5 ;\cb1 \
+\cb3   \cf6 font-size\cf5 : \cf11 1.9rem\cf5 ;\cb1 \
+\cb3   \cf6 font-weight\cf5 : \cf11 700\cf5 ;\cb1 \
+\cb3   \cf6 color\cf5 : \cf12 var\cf5 (\cf6 --gold-light\cf5 );\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .modal-eyebrow\cf5  \{\cb1 \
+\cb3   \cf6 font-size\cf5 : \cf11 0.68rem\cf5 ;\cb1 \
+\cb3   \cf6 text-transform\cf5 : \cf9 uppercase\cf5 ;\cb1 \
+\cb3   \cf6 letter-spacing\cf5 : \cf11 0.1em\cf5 ;\cb1 \
+\cb3   \cf6 color\cf5 : \cf12 var\cf5 (\cf6 --muted\cf5 );\cb1 \
+\cb3   \cf6 margin-bottom\cf5 : \cf11 1.4rem\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .bar-section\cf5  \{ \cf6 margin\cf5 : \cf11 0.8rem\cf5  \cf11 0\cf5 ; \}\cb1 \
+\cf2 \cb3 .bar-meta\cf5  \{\cb1 \
+\cb3   \cf6 display\cf5 : \cf9 flex\cf5 ;\cb1 \
+\cb3   \cf6 justify-content\cf5 : \cf9 space-between\cf5 ;\cb1 \
+\cb3   \cf6 font-size\cf5 : \cf11 0.8rem\cf5 ;\cb1 \
+\cb3   \cf6 color\cf5 : \cf12 var\cf5 (\cf6 --muted\cf5 );\cb1 \
+\cb3   \cf6 margin-bottom\cf5 : \cf11 0.35rem\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .bar-meta\cf5  \cf2 .bval\cf5  \{ \cf6 font-weight\cf5 : \cf11 600\cf5 ; \cf6 color\cf5 : \cf12 var\cf5 (\cf6 --text\cf5 ); \}\cb1 \
+\cf2 \cb3 .bar-track\cf5  \{\cb1 \
+\cb3   \cf6 height\cf5 : \cf11 11px\cf5 ;\cb1 \
+\cb3   \cf6 background\cf5 : \cf12 rgba\cf5 (\cf11 255\cf5 ,\cf11 255\cf5 ,\cf11 255\cf5 ,\cf11 0.05\cf5 );\cb1 \
+\cb3   \cf6 border-radius\cf5 : \cf11 6px\cf5 ;\cb1 \
+\cb3   \cf6 overflow\cf5 : \cf9 hidden\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .bar-fill\cf5  \{\cb1 \
+\cb3   \cf6 height\cf5 : \cf11 100%\cf5 ;\cb1 \
+\cb3   \cf6 border-radius\cf5 : \cf11 6px\cf5 ;\cb1 \
+\cb3   \cf6 width\cf5 : \cf11 0\cf5 ;\cb1 \
+\cb3   \cf6 transition\cf5 : width \cf11 0.9s\cf5  \cf12 cubic-bezier\cf5 (\cf11 0.4\cf5 ,\cf11 0\cf5 ,\cf11 0.2\cf5 ,\cf11 1\cf5 );\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .bar-fill.orange\cf5  \{ \cf6 background\cf5 : \cf12 linear-gradient\cf5 (\cf11 90deg\cf5 , \cf12 var\cf5 (\cf6 --o-lo\cf5 ), \cf12 var\cf5 (\cf6 --o-hi\cf5 )); \}\cb1 \
+\
+\cf2 \cb3 .modal-delta\cf5  \{\cb1 \
+\cb3   \cf6 text-align\cf5 : \cf9 center\cf5 ;\cb1 \
+\cb3   \cf6 padding\cf5 : \cf11 0.9rem\cf5  \cf11 0\cf5  \cf11 0.6rem\cf5 ;\cb1 \
+\cb3   \cf6 font-size\cf5 : \cf11 1.4rem\cf5 ;\cb1 \
+\cb3   \cf6 font-family\cf5 : \cf13 'Cormorant Garamond'\cf5 , \cf9 serif\cf5 ;\cb1 \
+\cb3   \cf6 font-weight\cf5 : \cf11 700\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .modal-delta.down\cf5  \{ \cf6 color\cf5 : \cf9 #ff6b6b\cf5 ; \}\cb1 \
+\cf2 \cb3 .modal-delta.up\cf5    \{ \cf6 color\cf5 : \cf9 #6dd5fa\cf5 ; \}\cb1 \
+\cf2 \cb3 .modal-delta.eq\cf5    \{ \cf6 color\cf5 : \cf12 var\cf5 (\cf6 --muted\cf5 ); \}\cb1 \
+\cf2 \cb3 .modal-insight\cf5  \{\cb1 \
+\cb3   \cf6 font-size\cf5 : \cf11 0.82rem\cf5 ;\cb1 \
+\cb3   \cf6 line-height\cf5 : \cf11 1.65\cf5 ;\cb1 \
+\cb3   \cf6 color\cf5 : \cf12 var\cf5 (\cf6 --muted\cf5 );\cb1 \
+\cb3   \cf6 border-top\cf5 : \cf11 1px\cf5  \cf9 solid\cf5  \cf12 var\cf5 (\cf6 --border\cf5 );\cb1 \
+\cb3   \cf6 padding-top\cf5 : \cf11 1rem\cf5 ;\cb1 \
+\cb3   \cf6 margin-top\cf5 : \cf11 0.5rem\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 .modal-insight\cf5  \cf4 strong\cf5  \{ \cf6 color\cf5 : \cf12 var\cf5 (\cf6 --text\cf5 ); \}\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 /* \uc0\u9472 \u9472  FOOTER \u9472 \u9472  */\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 .source-line\cf5  \{\cb1 \
+\cb3   \cf6 text-align\cf5 : \cf9 center\cf5 ;\cb1 \
+\cb3   \cf6 padding\cf5 : \cf11 0.5rem\cf5  \cf11 2rem\cf5  \cf11 2.5rem\cf5 ;\cb1 \
+\cb3   \cf6 font-size\cf5 : \cf11 0.7rem\cf5 ;\cb1 \
+\cb3   \cf6 color\cf5 : \cf12 var\cf5 (\cf6 --muted\cf5 );\cb1 \
+\cb3   \cf6 line-height\cf5 : \cf11 1.6\cf5 ;\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 </\cf4 style\cf2 >\cf5 \cb1 \
+\cf2 \cb3 </\cf4 head\cf2 >\cf5 \cb1 \
+\cf2 \cb3 <\cf4 body\cf2 >\cf5 \cb1 \
+\
+\cf2 \cb3 <\cf4 header\cf5  \cf6 class\cf5 =\cf7 "header"\cf2 >\cf5 \cb1 \
+\cb3   \cf2 <\cf4 h1\cf2 >\cf5 Di C\uc0\u432  N\u7897 i \u272 \u7883 a\cf2 <\cf4 br\cf2 ><\cf4 em\cf2 >\cf5 Vi\uc0\u7879 t Nam\cf2 </\cf4 em\cf2 ></\cf4 h1\cf2 >\cf5 \cb1 \
+\cb3   \cf2 <\cf4 p\cf5  \cf6 class\cf5 =\cf7 "header-sub"\cf2 >\cf5 B\uc0\u7843 n \u273 \u7891  nhi\u7879 t ng\u432 \u7901 i di c\u432  v\'e0o 6 t\u7881 nh th\'e0nh l\u7899 n nh\u7845 t \'97 2014 \u273 \u7871 n 2024\cf2 </\cf4 p\cf2 >\cf5 \cb1 \
+\cb3   \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "header-rule"\cf2 ></\cf4 div\cf2 >\cf5 \cb1 \
+\cf2 \cb3 </\cf4 header\cf2 >\cf5 \cb1 \
+\
+\cf2 \cb3 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "period-tabs"\cf2 >\cf5 \cb1 \
+\cb3   \cf2 <\cf4 button\cf5  \cf6 class\cf5 =\cf7 "tab-btn active"\cf5  \cf6 id\cf5 =\cf7 "tab0"\cf5  \cf6 onclick\cf5 =\cf7 "\cf16 goSlide\cf7 (\cf11 0\cf7 )"\cf2 >\cf5 2014 \'96 2019\cf2 </\cf4 button\cf2 >\cf5 \cb1 \
+\cb3   \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "tab-divider"\cf2 ></\cf4 div\cf2 >\cf5 \cb1 \
+\cb3   \cf2 <\cf4 button\cf5  \cf6 class\cf5 =\cf7 "tab-btn"\cf5  \cf6 id\cf5 =\cf7 "tab1"\cf5  \cf6 onclick\cf5 =\cf7 "\cf16 goSlide\cf7 (\cf11 1\cf7 )"\cf2 >\cf5 2019 \'96 2024\cf2 </\cf4 button\cf2 >\cf5 \cb1 \
+\cf2 \cb3 </\cf4 div\cf2 >\cf5 \cb1 \
+\
+\cf2 \cb3 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "slider-outer"\cf5  \cf6 id\cf5 =\cf7 "sliderOuter"\cf2 >\cf5 \cb1 \
+\cb3   \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "slider-track"\cf5  \cf6 id\cf5 =\cf7 "sliderTrack"\cf2 >\cf5 \cb1 \
+\
+\cb3     \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "slide"\cf2 >\cf5 \cb1 \
+\cb3       \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "period-header"\cf2 >\cf5 \cb1 \
+\cb3         \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "period-title orange"\cf2 >\cf5 2014 \'97 2019\cf2 </\cf4 div\cf2 >\cf5 \cb1 \
+\cb3         \cf2 <\cf4 p\cf5  \cf6 class\cf5 =\cf7 "period-desc"\cf2 >\cf5 \uc0\u272 \u7881 nh cao l\'e0n s\'f3ng di c\u432  \'97 3,8 tri\u7879 u ng\u432 \u7901 i \u273 \u7893  v\'e0o c\'e1c \u273 \'f4 th\u7883  l\u7899 n, chi\u7871 m \cf2 <\cf4 strong\cf5  \cf6 style\cf5 =\cf7 "color:var(--o-mid)"\cf2 >\cf5 59%\cf2 </\cf4 strong\cf2 >\cf5  to\'e0n qu\uc0\u7889 c\cf2 </\cf4 p\cf2 >\cf5 \cb1 \
+\cb3         \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "kpi-row"\cf2 >\cf5 \cb1 \
+\cb3           \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "kpi"\cf2 ><\cf4 div\cf5  \cf6 class\cf5 =\cf7 "kpi-val orange"\cf2 >\cf5 3,8M\cf2 </\cf4 div\cf2 ><\cf4 div\cf5  \cf6 class\cf5 =\cf7 "kpi-lbl"\cf2 >\cf5 T\uc0\u7893 ng di c\u432  v\'e0o 6 t\u7881 nh\cf2 </\cf4 div\cf2 ></\cf4 div\cf2 >\cf5 \cb1 \
+\cb3           \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "kpi"\cf2 ><\cf4 div\cf5  \cf6 class\cf5 =\cf7 "kpi-val orange"\cf2 >\cf5 59%\cf2 </\cf4 div\cf2 ><\cf4 div\cf5  \cf6 class\cf5 =\cf7 "kpi-lbl"\cf2 >\cf5 T\uc0\u7881  tr\u7885 ng to\'e0n qu\u7889 c\cf2 </\cf4 div\cf2 ></\cf4 div\cf2 >\cf5 \cb1 \
+\cb3         \cf2 </\cf4 div\cf2 >\cf5 \cb1 \
+\cb3       \cf2 </\cf4 div\cf2 >\cf5 \cb1 \
+\cb3       \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "map-wrapper"\cf2 >\cf5 \cb1 \
+\cb3         \cf2 <\cf4 svg\cf5  \cf6 id\cf5 =\cf7 "map0"\cf5  \cf6 class\cf5 =\cf7 "map-svg"\cf5  \cf6 viewBox\cf5 =\cf7 "0 0 320 680"\cf5  \cf6 width\cf5 =\cf7 "300"\cf5  \cf6 height\cf5 =\cf7 "637"\cf2 ></\cf4 svg\cf2 >\cf5 \cb1 \
+\cb3       \cf2 </\cf4 div\cf2 >\cf5 \cb1 \
+\cb3       \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "legend-row"\cf2 >\cf5 \cb1 \
+\cb3         \cf2 <\cf4 svg\cf5  \cf6 class\cf5 =\cf7 "legend-bar"\cf5  \cf6 viewBox\cf5 =\cf7 "0 0 110 7"\cf2 ><\cf4 defs\cf2 ><\cf4 linearGradient\cf5  \cf6 id\cf5 =\cf7 "legO"\cf5  \cf6 x1\cf5 =\cf7 "0"\cf5  \cf6 y1\cf5 =\cf7 "0"\cf5  \cf6 x2\cf5 =\cf7 "1"\cf5  \cf6 y2\cf5 =\cf7 "0"\cf2 ><\cf4 stop\cf5  \cf6 offset\cf5 =\cf7 "0%"\cf5  \cf6 stop-color\cf5 =\cf7 "#ffe0b2"\cf2 /><\cf4 stop\cf5  \cf6 offset\cf5 =\cf7 "50%"\cf5  \cf6 stop-color\cf5 =\cf7 "#ff9800"\cf2 /><\cf4 stop\cf5  \cf6 offset\cf5 =\cf7 "100%"\cf5  \cf6 stop-color\cf5 =\cf7 "#e65100"\cf2 /></\cf4 linearGradient\cf2 ></\cf4 defs\cf2 ><\cf4 rect\cf5  \cf6 width\cf5 =\cf7 "110"\cf5  \cf6 height\cf5 =\cf7 "7"\cf5  \cf6 rx\cf5 =\cf7 "3.5"\cf5  \cf6 fill\cf5 =\cf7 "url(#legO)"\cf2 /></\cf4 svg\cf2 >\cf5 \cb1 \
+\cb3       \cf2 </\cf4 div\cf2 >\cf5 \cb1 \
+\cb3       \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "swipe-hint"\cf2 >\cf5 \uc0\u8592  L\u432 \u7899 t sang \u273 \u7875  xem giai \u273 o\u7841 n 2019\'962024 \u8594 \cf2 </\cf4 div\cf2 >\cf5 \cb1 \
+\cb3     \cf2 </\cf4 div\cf2 >\cf5 \cb1 \
+\
+\cb3     \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "slide"\cf2 >\cf5 \cb1 \
+\cb3       \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "period-header"\cf2 >\cf5 \cb1 \
+\cb3         \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "period-title orange"\cf2 >\cf5 2019 \'97 2024\cf2 </\cf4 div\cf2 >\cf5 \cb1 \
+\cb3         \cf2 <\cf4 p\cf5  \cf6 class\cf5 =\cf7 "period-desc"\cf2 >\cf5 L\'e0n s\'f3ng h\uc0\u7841  nhi\u7879 t \'97 1,8 tri\u7879 u ng\u432 \u7901 i, ph\u7843 n \'e1nh \'e1p l\u7921 c h\u7841  t\u7847 ng v\'e0 xu h\u432 \u7899 ng \cf2 <\cf4 strong\cf5  \cf6 style\cf5 =\cf7 "color:var(--o-mid)"\cf2 >\cf5 d\uc0\u7883 ch sang \u273 \'f4 th\u7883  v\u7879  tinh\cf2 </\cf4 strong\cf2 ></\cf4 p\cf2 >\cf5 \cb1 \
+\cb3         \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "kpi-row"\cf2 >\cf5 \cb1 \
+\cb3           \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "kpi"\cf2 ><\cf4 div\cf5  \cf6 class\cf5 =\cf7 "kpi-val orange"\cf2 >\cf5 1,8M\cf2 </\cf4 div\cf2 ><\cf4 div\cf5  \cf6 class\cf5 =\cf7 "kpi-lbl"\cf2 >\cf5 T\uc0\u7893 ng di c\u432  v\'e0o 6 t\u7881 nh\cf2 </\cf4 div\cf2 ></\cf4 div\cf2 >\cf5 \cb1 \
+\cb3           \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "kpi"\cf2 ><\cf4 div\cf5  \cf6 class\cf5 =\cf7 "kpi-val orange"\cf2 >\cf5 51%\cf2 </\cf4 div\cf2 ><\cf4 div\cf5  \cf6 class\cf5 =\cf7 "kpi-lbl"\cf2 >\cf5 T\uc0\u7881  tr\u7885 ng to\'e0n qu\u7889 c\cf2 </\cf4 div\cf2 ></\cf4 div\cf2 >\cf5 \cb1 \
+\cb3         \cf2 </\cf4 div\cf2 >\cf5 \cb1 \
+\cb3       \cf2 </\cf4 div\cf2 >\cf5 \cb1 \
+\cb3       \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "map-wrapper"\cf2 >\cf5 \cb1 \
+\cb3         \cf2 <\cf4 svg\cf5  \cf6 id\cf5 =\cf7 "map1"\cf5  \cf6 class\cf5 =\cf7 "map-svg"\cf5  \cf6 viewBox\cf5 =\cf7 "0 0 320 680"\cf5  \cf6 width\cf5 =\cf7 "300"\cf5  \cf6 height\cf5 =\cf7 "637"\cf2 ></\cf4 svg\cf2 >\cf5 \cb1 \
+\cb3       \cf2 </\cf4 div\cf2 >\cf5 \cb1 \
+\cb3       \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "legend-row"\cf2 >\cf5 \cb1 \
+\cb3         \cf2 <\cf4 svg\cf5  \cf6 class\cf5 =\cf7 "legend-bar"\cf5  \cf6 viewBox\cf5 =\cf7 "0 0 110 7"\cf2 ><\cf4 rect\cf5  \cf6 width\cf5 =\cf7 "110"\cf5  \cf6 height\cf5 =\cf7 "7"\cf5  \cf6 rx\cf5 =\cf7 "3.5"\cf5  \cf6 fill\cf5 =\cf7 "url(#legO)"\cf2 /></\cf4 svg\cf2 >\cf5 \cb1 \
+\cb3       \cf2 </\cf4 div\cf2 >\cf5 \cb1 \
+\cb3       \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "swipe-hint"\cf2 >\cf5 \uc0\u8592  L\u432 \u7899 t sang \u273 \u7875  xem giai \u273 o\u7841 n 2014\'962019 \u8594 \cf2 </\cf4 div\cf2 >\cf5 \cb1 \
+\cb3     \cf2 </\cf4 div\cf2 >\cf5 \cb1 \
+\
+\cb3   \cf2 </\cf4 div\cf2 >\cf5 \cb1 \
+\cf2 \cb3 </\cf4 div\cf2 >\cf5 \cb1 \
+\
+\cf2 \cb3 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "nav-row"\cf2 >\cf5 \cb1 \
+\cb3   \cf2 <\cf4 button\cf5  \cf6 class\cf5 =\cf7 "nav-btn"\cf5  \cf6 id\cf5 =\cf7 "prevBtn"\cf5  \cf6 onclick\cf5 =\cf7 "\cf16 goSlide\cf7 (\cf11 0\cf7 )"\cf5  \cf6 disabled\cf2 >\cf17 &#8592;\cf2 </\cf4 button\cf2 >\cf5 \cb1 \
+\cb3   \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "nav-dots"\cf2 >\cf5 \cb1 \
+\cb3     \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "nav-dot active"\cf5  \cf6 onclick\cf5 =\cf7 "\cf16 goSlide\cf7 (\cf11 0\cf7 )"\cf2 ></\cf4 div\cf2 >\cf5 \cb1 \
+\cb3     \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "nav-dot"\cf5  \cf6 onclick\cf5 =\cf7 "\cf16 goSlide\cf7 (\cf11 1\cf7 )"\cf2 ></\cf4 div\cf2 >\cf5 \cb1 \
+\cb3   \cf2 </\cf4 div\cf2 >\cf5 \cb1 \
+\cb3   \cf2 <\cf4 button\cf5  \cf6 class\cf5 =\cf7 "nav-btn"\cf5  \cf6 id\cf5 =\cf7 "nextBtn"\cf5  \cf6 onclick\cf5 =\cf7 "\cf16 goSlide\cf7 (\cf11 1\cf7 )"\cf2 >\cf17 &#8594;\cf2 </\cf4 button\cf2 >\cf5 \cb1 \
+\cf2 \cb3 </\cf4 div\cf2 >\cf5 \cb1 \
+\
+\cf2 \cb3 <\cf4 p\cf5  \cf6 class\cf5 =\cf7 "source-line"\cf2 >\cf5 \cb1 \
+\cb3   Ngu\uc0\u7891 n: \cf2 <\cf4 em\cf2 >\cf5 "Di c\uc0\u432  n\u7897 i \u273 \u7883 a Vi\u7879 t Nam giai \u273 o\u7841 n 2009\'962024"\cf2 </\cf4 em\cf2 >\cf5  \'97 C\uc0\u7909 c Th\u7889 ng k\'ea Vi\u7879 t Nam, th\'e1ng 12/2025\cb1 \
+\cf2 \cb3 </\cf4 p\cf2 >\cf5 \cb1 \
+\
+\cf2 \cb3 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "tooltip"\cf5  \cf6 id\cf5 =\cf7 "tooltip"\cf2 ></\cf4 div\cf2 >\cf5 \cb1 \
+\
+\cf2 \cb3 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "modal-bg"\cf5  \cf6 id\cf5 =\cf7 "modalBg"\cf5  \cf6 onclick\cf5 =\cf7 "\cf16 handleModalBgClick\cf7 (\cf15 event\cf7 )"\cf2 >\cf5 \cb1 \
+\cb3   \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "modal"\cf5  \cf6 id\cf5 =\cf7 "modal"\cf2 >\cf5 \cb1 \
+\cb3     \cf2 <\cf4 button\cf5  \cf6 class\cf5 =\cf7 "modal-close"\cf5  \cf6 onclick\cf5 =\cf7 "\cf16 closeModal\cf7 ()"\cf2 >\cf17 &#10005;\cf2 </\cf4 button\cf2 >\cf5 \cb1 \
+\cb3     \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "modal-city"\cf5  \cf6 id\cf5 =\cf7 "mCity"\cf2 ></\cf4 div\cf2 >\cf5 \cb1 \
+\cb3     \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "modal-eyebrow"\cf2 >\cf5 Bi\uc0\u7871 n \u273 \u7897 ng ng\u432 \u7901 i di c\u432  theo hai giai \u273 o\u7841 n\cf2 </\cf4 div\cf2 >\cf5 \cb1 \
+\cb3     \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "bar-section"\cf2 >\cf5 \cb1 \
+\cb3       \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "bar-meta"\cf2 >\cf5 \cb1 \
+\cb3         \cf2 <\cf4 span\cf2 >\cf5 2014 \'96 2019\cf2 </\cf4 span\cf2 >\cf5 \cb1 \
+\cb3         \cf2 <\cf4 span\cf5  \cf6 class\cf5 =\cf7 "bval"\cf5  \cf6 id\cf5 =\cf7 "mV1"\cf2 ></\cf4 span\cf2 >\cf5 \cb1 \
+\cb3       \cf2 </\cf4 div\cf2 >\cf5 \cb1 \
+\cb3       \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "bar-track"\cf2 ><\cf4 div\cf5  \cf6 class\cf5 =\cf7 "bar-fill orange"\cf5  \cf6 id\cf5 =\cf7 "mBar1"\cf2 ></\cf4 div\cf2 ></\cf4 div\cf2 >\cf5 \cb1 \
+\cb3     \cf2 </\cf4 div\cf2 >\cf5 \cb1 \
+\cb3     \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "bar-section"\cf2 >\cf5 \cb1 \
+\cb3       \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "bar-meta"\cf2 >\cf5 \cb1 \
+\cb3         \cf2 <\cf4 span\cf2 >\cf5 2019 \'96 2024\cf2 </\cf4 span\cf2 >\cf5 \cb1 \
+\cb3         \cf2 <\cf4 span\cf5  \cf6 class\cf5 =\cf7 "bval"\cf5  \cf6 id\cf5 =\cf7 "mV2"\cf2 ></\cf4 span\cf2 >\cf5 \cb1 \
+\cb3       \cf2 </\cf4 div\cf2 >\cf5 \cb1 \
+\cb3       \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "bar-track"\cf2 ><\cf4 div\cf5  \cf6 class\cf5 =\cf7 "bar-fill orange"\cf5  \cf6 id\cf5 =\cf7 "mBar2"\cf2 ></\cf4 div\cf2 ></\cf4 div\cf2 >\cf5 \cb1 \
+\cb3     \cf2 </\cf4 div\cf2 >\cf5 \cb1 \
+\cb3     \cf2 <\cf4 div\cf5  \cf6 class\cf5 =\cf7 "modal-delta"\cf5  \cf6 id\cf5 =\cf7 "mDelta"\cf2 ></\cf4 div\cf2 >\cf5 \cb1 \
+\cb3     \cf2 <\cf4 p\cf5  \cf6 class\cf5 =\cf7 "modal-insight"\cf5  \cf6 id\cf5 =\cf7 "mInsight"\cf2 ></\cf4 p\cf2 >\cf5 \cb1 \
+\cb3   \cf2 </\cf4 div\cf2 >\cf5 \cb1 \
+\cf2 \cb3 </\cf4 div\cf2 >\cf5 \cb1 \
+\
+\cf2 \cb3 <\cf4 script\cf2 >\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 // \uc0\u9472 \u9472  DATA \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf17 \cb3 const\cf5  \cf15 PROVINCES\cf5  = [\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3   \{\cb1 \
+\cb3     \cf18 id\cf19 :\cf18  \cf13 'hcm'\cf5 , \cf18 name\cf19 :\cf18  \cf13 'TP. HCM'\cf5 , \cf18 lat\cf19 :\cf18  \cf11 10.78\cf5 , \cf18 lon\cf19 :\cf18  \cf11 106.70\cf5 ,\cb1 \
+\cb3     \cf18 p1\cf19 :\cf18  \cf11 1.6\cf5 , \cf18 p2\cf19 :\cf18  \cf11 0.7\cf5 ,\cb1 \
+\cb3     \cf18 insight\cf19 :\cf18  \cf13 'TP. HCM gi\uc0\u7843 m <strong>56%</strong> l\u432 \u7907 ng ng\u432 \u7901 i di c\u432  t\u7915  giai \u273 o\u7841 n tr\u432 \u7899 c, ph\u7843 n \'e1nh \'e1p l\u7921 c h\u7841  t\u7847 ng, chi ph\'ed sinh ho\u7841 t cao ng\'e0y c\'e0ng t\u259 ng v\'e0 ch\'ednh s\'e1ch ki\u7875 m so\'e1t d\'e2n s\u7889  c\u7911 a si\'eau \u273 \'f4 th\u7883  l\u7899 n nh\u7845 t Vi\u7879 t Nam.'\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf18 \cb3   \cf5 \},\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3   \{\cb1 \
+\cb3     \cf18 id\cf19 :\cf18  \cf13 'hn'\cf5 , \cf18 name\cf19 :\cf18  \cf13 'H\'e0 N\uc0\u7897 i'\cf5 , \cf18 lat\cf19 :\cf18  \cf11 21.02\cf5 , \cf18 lon\cf19 :\cf18  \cf11 105.83\cf5 ,\cb1 \
+\cb3     \cf18 p1\cf19 :\cf18  \cf11 0.85\cf5 , \cf18 p2\cf19 :\cf18  \cf11 0.4\cf5 ,\cb1 \
+\cb3     \cf18 insight\cf19 :\cf18  \cf13 'H\'e0 N\uc0\u7897 i ghi nh\u7853 n m\u7913 c gi\u7843 m <strong>53%</strong>, song gi\u7919  v\u7883  tr\'ed \u273 \'f4 th\u7883  thu h\'fat di c\u432  l\u7899 n th\u7913  2 c\u7843  n\u432 \u7899 c. Xu h\u432 \u7899 ng di chuy\u7875 n ra v\'f9ng v\u7879  tinh nh\u432  B\u7855 c Ninh, H\u432 ng Y\'ean ng\'e0y c\'e0ng r\'f5 n\'e9t.'\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf18 \cb3   \cf5 \},\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3   \{\cb1 \
+\cb3     \cf18 id\cf19 :\cf18  \cf13 'bd'\cf5 , \cf18 name\cf19 :\cf18  \cf13 'B\'ecnh D\uc0\u432 \u417 ng'\cf5 , \cf18 lat\cf19 :\cf18  \cf11 11.22\cf5 , \cf18 lon\cf19 :\cf18  \cf11 106.55\cf5 ,\cb1 \
+\cb3     \cf18 p1\cf19 :\cf18  \cf11 0.7\cf5 , \cf18 p2\cf19 :\cf18  \cf11 0.3\cf5 ,\cb1 \
+\cb3     \cf18 insight\cf19 :\cf18  \cf13 'B\'ecnh D\uc0\u432 \u417 ng \'97 trung t\'e2m c\'f4ng nghi\u7879 p ph\'eda Nam \'97 gi\u7843 m <strong>57%</strong>, m\u7897 t ph\u7847 n do c\'e1c khu c\'f4ng nghi\u7879 p m\u7899 i h\'ecnh th\'e0nh t\u7841 i c\'e1c t\u7881 nh l\'e2n c\u7853 n nh\u432  Long An, T\'e2y Ninh thu h\'fat d\'f2ng lao \u273 \u7897 ng.'\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf18 \cb3   \cf5 \},\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3   \{\cb1 \
+\cb3     \cf18 id\cf19 :\cf18  \cf13 'dn'\cf5 , \cf18 name\cf19 :\cf18  \cf13 '\uc0\u272 \'e0 N\u7861 ng'\cf5 , \cf18 lat\cf19 :\cf18  \cf11 16.07\cf5 , \cf18 lon\cf19 :\cf18  \cf11 108.22\cf5 ,\cb1 \
+\cb3     \cf18 p1\cf19 :\cf18  \cf11 0.5\cf5 , \cf18 p2\cf19 :\cf18  \cf11 0.2\cf5 ,\cb1 \
+\cb3     \cf18 insight\cf19 :\cf18  \cf13 '\uc0\u272 \'e0 N\u7861 ng v\u7851 n l\'e0 c\u7921 c t\u259 ng tr\u432 \u7903 ng c\u7911 a mi\u7873 n Trung, song l\u432 \u7907 ng di c\u432  gi\u7843 m m\u7841 nh trong giai \u273 o\u7841 n 2019\'962024. Th\'e0nh ph\u7889  \u273 ang t\'e1i c\u7845 u tr\'fac kinh t\u7871  sau giai \u273 o\u7841 n t\u259 ng tr\u432 \u7903 ng n\'f3ng v\u7873  du l\u7883 ch v\'e0 b\u7845 t \u273 \u7897 ng s\u7843 n.'\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf18 \cb3   \cf5 \},\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3   \{\cb1 \
+\cb3     \cf18 id\cf19 :\cf18  \cf13 'bn'\cf5 , \cf18 name\cf19 :\cf18  \cf13 'B\uc0\u7855 c Ninh'\cf5 , \cf18 lat\cf19 :\cf18  \cf11 21.18\cf5 , \cf18 lon\cf19 :\cf18  \cf11 106.08\cf5 ,\cb1 \
+\cb3     \cf18 p1\cf19 :\cf18  \cf11 0.3\cf5 , \cf18 p2\cf19 :\cf18  \cf11 0.3\cf5 ,\cb1 \
+\cb3     \cf18 insight\cf19 :\cf18  \cf13 'B\uc0\u7855 c Ninh l\'e0 \u273 i\u7875 m s\'e1ng <strong>duy tr\'ec \u7893 n \u273 \u7883 nh</strong> l\u432 \u7907 ng ng\u432 \u7901 i di c\u432 , nh\u7901  s\u7913 c h\'fat b\u7873 n v\u7919 ng c\u7911 a c\'e1c khu c\'f4ng nghi\u7879 p \u273 i\u7879 n t\u7917  (Samsung, Canon, Foxconn). \u272 \'e2y l\'e0 \u273 \'f4 th\u7883  v\u7879  tinh c\'f4ng nghi\u7879 p tr\u7885 ng \u273 i\u7875 m c\u7911 a v\'f9ng Th\u7911  \u273 \'f4.'\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf18 \cb3   \cf5 \},\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3   \{\cb1 \
+\cb3     \cf18 id\cf19 :\cf18  \cf13 'dnai'\cf5 , \cf18 name\cf19 :\cf18  \cf13 '\uc0\u272 \u7891 ng Nai'\cf5 , \cf18 lat\cf19 :\cf18  \cf11 11.07\cf5 , \cf18 lon\cf19 :\cf18  \cf11 107.20\cf5 ,\cb1 \
+\cb3     \cf18 p1\cf19 :\cf18  \cf11 0.2\cf5 , \cf18 p2\cf19 :\cf18  \cf11 0.2\cf5 ,\cb1 \
+\cb3     \cf18 insight\cf19 :\cf18  \cf13 '\uc0\u272 \u7891 ng Nai duy tr\'ec l\u432 \u7907 ng di c\u432  \u7893 n \u273 \u7883 nh \u7903  m\u7913 c <strong>0,2 tri\u7879 u</strong> ng\u432 \u7901 i c\u7843  hai giai \u273 o\u7841 n, kh\u7859 ng \u273 \u7883 nh vai tr\'f2 trung t\'e2m c\'f4ng nghi\u7879 p v\'e0 logistics quan tr\u7885 ng trong V\'f9ng kinh t\u7871  tr\u7885 ng \u273 i\u7875 m ph\'eda Nam.'\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf18 \cb3   \cf5 \}\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3 ];\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 // SVG coordinate transform\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf17 \cb3 function\cf5  \cf16 toXY\cf5 (\cf20 lat\cf5 , \cf20 lon\cf5 ) \cf18 \{\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf18 \cb3   \cf17 const\cf18  \cf15 x\cf18  \cf5 =\cf18  (\cf20 lon\cf18  \cf5 -\cf18  \cf11 102.0\cf18 ) \cf5 /\cf18  \cf11 8.5\cf18  \cf5 *\cf18  \cf11 285\cf18  \cf5 +\cf18  \cf11 15\cf18 ;\cf5 \cb1 \
+\cf18 \cb3   \cf17 const\cf18  \cf15 y\cf18  \cf5 =\cf18  (\cf11 24.0\cf18  \cf5 -\cf18  \cf20 lat\cf18 ) \cf5 /\cf18  \cf11 16.5\cf18  \cf5 *\cf18  \cf11 658\cf18  \cf5 +\cf18  \cf11 10\cf18 ;\cf5 \cb1 \
+\cf18 \cb3   \cf14 return\cf18  [\cf15 x\cf18 , \cf15 y\cf18 ];\cf5 \cb1 \
+\cf18 \cb3 \}\cf5 \cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf17 \cb3 const\cf5  \cf15 VN_OUTLINE\cf5  = [\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3   [\cf11 22.5\cf5 ,\cf11 102.1\cf5 ],[\cf11 22.8\cf5 ,\cf11 102.8\cf5 ],[\cf11 23.1\cf5 ,\cf11 103.5\cf5 ],[\cf11 23.3\cf5 ,\cf11 104.4\cf5 ],[\cf11 23.4\cf5 ,\cf11 105.0\cf5 ],[\cf11 23.3\cf5 ,\cf11 105.8\cf5 ],[\cf11 23.1\cf5 ,\cf11 106.5\cf5 ],[\cf11 22.8\cf5 ,\cf11 107.0\cf5 ],\cb1 \
+\cb3   [\cf11 21.5\cf5 ,\cf11 107.5\cf5 ],[\cf11 21.0\cf5 ,\cf11 107.7\cf5 ],[\cf11 20.7\cf5 ,\cf11 107.0\cf5 ],[\cf11 20.5\cf5 ,\cf11 107.1\cf5 ],[\cf11 20.3\cf5 ,\cf11 107.4\cf5 ],[\cf11 20.0\cf5 ,\cf11 107.3\cf5 ],[\cf11 19.5\cf5 ,\cf11 105.9\cf5 ],[\cf11 19.0\cf5 ,\cf11 105.6\cf5 ],\cb1 \
+\cb3   [\cf11 18.5\cf5 ,\cf11 105.9\cf5 ],[\cf11 18.0\cf5 ,\cf11 106.5\cf5 ],[\cf11 17.5\cf5 ,\cf11 107.2\cf5 ],[\cf11 17.2\cf5 ,\cf11 107.2\cf5 ],[\cf11 16.7\cf5 ,\cf11 107.8\cf5 ],[\cf11 16.1\cf5 ,\cf11 108.2\cf5 ],[\cf11 15.7\cf5 ,\cf11 108.5\cf5 ],[\cf11 15.0\cf5 ,\cf11 108.8\cf5 ],\cb1 \
+\cb3   [\cf11 14.0\cf5 ,\cf11 109.0\cf5 ],[\cf11 13.0\cf5 ,\cf11 109.3\cf5 ],[\cf11 12.0\cf5 ,\cf11 109.2\cf5 ],[\cf11 11.5\cf5 ,\cf11 109.0\cf5 ],[\cf11 11.0\cf5 ,\cf11 108.3\cf5 ],[\cf11 10.5\cf5 ,\cf11 107.3\cf5 ],[\cf11 10.0\cf5 ,\cf11 107.0\cf5 ],[\cf11 9.5\cf5 ,\cf11 106.5\cf5 ],\cb1 \
+\cb3   [\cf11 9.0\cf5 ,\cf11 105.5\cf5 ],[\cf11 8.7\cf5 ,\cf11 105.0\cf5 ],[\cf11 8.5\cf5 ,\cf11 104.8\cf5 ],[\cf11 9.0\cf5 ,\cf11 104.4\cf5 ],[\cf11 9.5\cf5 ,\cf11 104.2\cf5 ],[\cf11 10.0\cf5 ,\cf11 104.2\cf5 ],[\cf11 10.5\cf5 ,\cf11 104.5\cf5 ],[\cf11 10.8\cf5 ,\cf11 105.1\cf5 ],\cb1 \
+\cb3   [\cf11 11.0\cf5 ,\cf11 105.2\cf5 ],[\cf11 11.5\cf5 ,\cf11 105.5\cf5 ],[\cf11 12.0\cf5 ,\cf11 107.0\cf5 ],[\cf11 12.5\cf5 ,\cf11 107.5\cf5 ],[\cf11 13.0\cf5 ,\cf11 107.3\cf5 ],[\cf11 13.5\cf5 ,\cf11 107.3\cf5 ],[\cf11 14.0\cf5 ,\cf11 107.8\cf5 ],[\cf11 14.5\cf5 ,\cf11 107.0\cf5 ],\cb1 \
+\cb3   [\cf11 15.0\cf5 ,\cf11 107.7\cf5 ],[\cf11 15.5\cf5 ,\cf11 107.5\cf5 ],[\cf11 16.0\cf5 ,\cf11 107.2\cf5 ],[\cf11 16.5\cf5 ,\cf11 107.5\cf5 ],[\cf11 17.0\cf5 ,\cf11 106.7\cf5 ],[\cf11 17.5\cf5 ,\cf11 106.5\cf5 ],[\cf11 18.0\cf5 ,\cf11 105.6\cf5 ],[\cf11 18.5\cf5 ,\cf11 105.2\cf5 ],\cb1 \
+\cb3   [\cf11 19.0\cf5 ,\cf11 103.9\cf5 ],[\cf11 19.5\cf5 ,\cf11 103.5\cf5 ],[\cf11 20.0\cf5 ,\cf11 103.5\cf5 ],[\cf11 20.5\cf5 ,\cf11 103.0\cf5 ],[\cf11 21.0\cf5 ,\cf11 103.0\cf5 ],[\cf11 21.5\cf5 ,\cf11 102.5\cf5 ],[\cf11 22.0\cf5 ,\cf11 102.5\cf5 ],[\cf11 22.5\cf5 ,\cf11 102.1\cf5 ]\cb1 \
+\cb3 ];\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 // \uc0\u9472 \u9472  MAP RENDERER \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf17 \cb3 function\cf5  \cf16 drawMap\cf5 (\cf20 svgEl\cf5 , \cf20 periodKey\cf5 , \cf20 minColor\cf5 , \cf20 maxColor\cf5 ) \cf18 \{\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf18 \cb3   \cf17 const\cf18  \cf15 ns\cf18  \cf5 =\cf18  \cf13 'http://www.w3.org/2000/svg'\cf18 ;\cf5 \cb1 \
+\cf18 \cb3   \cf17 const\cf18  \cf15 defs\cf18  \cf5 =\cf18  \cf15 document\cf18 .\cf16 createElementNS\cf18 (\cf15 ns\cf18 , \cf13 'defs'\cf18 );\cf5 \cb1 \
+\
+\cf18 \cb3   \cf17 const\cf18  \cf15 blurId\cf18  \cf5 =\cf18  \cf13 `blur-\cf7 $\{\cf20 svgEl\cf5 .\cf18 id\cf7 \}\cf13 `\cf18 ;\cf5 \cb1 \
+\cf18 \cb3   \cf17 const\cf18  \cf15 filter\cf18  \cf5 =\cf18  \cf15 document\cf18 .\cf16 createElementNS\cf18 (\cf15 ns\cf18 , \cf13 'filter'\cf18 );\cf5 \cb1 \
+\cf18 \cb3   \cf15 filter\cf18 .\cf16 setAttribute\cf18 (\cf13 'id'\cf18 , \cf15 blurId\cf18 );\cf5 \cb1 \
+\cf18 \cb3   \cf15 filter\cf18 .\cf16 setAttribute\cf18 (\cf13 'x'\cf18 , \cf13 '-80%'\cf18 ); \cf15 filter\cf18 .\cf16 setAttribute\cf18 (\cf13 'y'\cf18 , \cf13 '-80%'\cf18 );\cf5 \cb1 \
+\cf18 \cb3   \cf15 filter\cf18 .\cf16 setAttribute\cf18 (\cf13 'width'\cf18 , \cf13 '260%'\cf18 ); \cf15 filter\cf18 .\cf16 setAttribute\cf18 (\cf13 'height'\cf18 , \cf13 '260%'\cf18 );\cf5 \cb1 \
+\cf18 \cb3   \cf17 const\cf18  \cf15 fBlur\cf18  \cf5 =\cf18  \cf15 document\cf18 .\cf16 createElementNS\cf18 (\cf15 ns\cf18 , \cf13 'feGaussianBlur'\cf18 );\cf5 \cb1 \
+\cf18 \cb3   \cf15 fBlur\cf18 .\cf16 setAttribute\cf18 (\cf13 'in'\cf18 , \cf13 'SourceGraphic'\cf18 );\cf5 \cb1 \
+\cf18 \cb3   \cf15 fBlur\cf18 .\cf16 setAttribute\cf18 (\cf13 'stdDeviation'\cf18 , \cf13 '9'\cf18 );\cf5 \cb1 \
+\cf18 \cb3   \cf15 filter\cf18 .\cf16 appendChild\cf18 (\cf15 fBlur\cf18 );\cf5 \cb1 \
+\cf18 \cb3   \cf15 defs\cf18 .\cf16 appendChild\cf18 (\cf15 filter\cf18 );\cf5 \cb1 \
+\
+\cf18 \cb3   \cf20 svgEl\cf18 .\cf16 appendChild\cf18 (\cf15 defs\cf18 );\cf5 \cb1 \
+\
+\cf18 \cb3   \cf17 const\cf18  \cf15 ptStr\cf18  \cf5 =\cf18  \cf15 VN_OUTLINE\cf18 .\cf16 map\cf18 (([\cf20 la\cf18 ,\cf20 lo\cf18 ]) \cf17 =>\cf18  \cf16 toXY\cf18 (\cf20 la\cf18 ,\cf20 lo\cf18 ).\cf16 join\cf18 (\cf13 ','\cf18 )).\cf16 join\cf18 (\cf13 ' '\cf18 );\cf5 \cb1 \
+\cf18 \cb3   \cf17 const\cf18  \cf15 land\cf18  \cf5 =\cf18  \cf15 document\cf18 .\cf16 createElementNS\cf18 (\cf15 ns\cf18 , \cf13 'polygon'\cf18 );\cf5 \cb1 \
+\cf18 \cb3   \cf15 land\cf18 .\cf16 setAttribute\cf18 (\cf13 'points'\cf18 , \cf15 ptStr\cf18 );\cf5 \cb1 \
+\cf18 \cb3   \cf15 land\cf18 .\cf16 setAttribute\cf18 (\cf13 'class'\cf18 , \cf13 'vn-land'\cf18 );\cf5 \cb1 \
+\cf18 \cb3   \cf20 svgEl\cf18 .\cf16 appendChild\cf18 (\cf15 land\cf18 );\cf5 \cb1 \
+\
+\cf18 \cb3   \cf14 for\cf18  (\cf17 let\cf18  la \cf5 =\cf18  \cf11 10\cf18 ; la \cf5 <=\cf18  \cf11 23\cf18 ; la \cf5 +=\cf18  \cf11 3\cf18 ) \{\cf5 \cb1 \
+\cf18 \cb3     \cf17 const\cf18  [,\cf15 y\cf18 ] \cf5 =\cf18  \cf16 toXY\cf18 (la, \cf11 102\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf17 const\cf18  \cf15 line\cf18  \cf5 =\cf18  \cf15 document\cf18 .\cf16 createElementNS\cf18 (\cf15 ns\cf18 , \cf13 'line'\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 line\cf18 .\cf16 setAttribute\cf18 (\cf13 'x1'\cf18 , \cf11 0\cf18 ); \cf15 line\cf18 .\cf16 setAttribute\cf18 (\cf13 'y1'\cf18 , \cf15 y\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 line\cf18 .\cf16 setAttribute\cf18 (\cf13 'x2'\cf18 , \cf11 320\cf18 ); \cf15 line\cf18 .\cf16 setAttribute\cf18 (\cf13 'y2'\cf18 , \cf15 y\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 line\cf18 .\cf16 setAttribute\cf18 (\cf13 'class'\cf18 , \cf13 'vn-grid'\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf20 svgEl\cf18 .\cf16 appendChild\cf18 (\cf15 line\cf18 );\cf5 \cb1 \
+\cf18 \cb3   \}\cf5 \cb1 \
+\
+\cf18 \cb3   \cf17 const\cf18  \cf15 maxVal\cf18  \cf5 =\cf18  \cf15 Math\cf18 .\cf16 max\cf18 (\cf5 ...\cf15 PROVINCES\cf18 .\cf16 map\cf18 (\cf20 p\cf18  \cf17 =>\cf18  \cf20 p\cf18 [\cf20 periodKey\cf18 ]));\cf5 \cb1 \
+\
+\cf18 \cb3   \cf15 PROVINCES\cf18 .\cf16 forEach\cf18 (\cf20 prov\cf18  \cf17 =>\cf18  \{\cf5 \cb1 \
+\cf18 \cb3     \cf17 const\cf18  \cf15 val\cf18  \cf5 =\cf18  \cf20 prov\cf18 [\cf20 periodKey\cf18 ];\cf5 \cb1 \
+\cf18 \cb3     \cf17 const\cf18  \cf15 norm\cf18  \cf5 =\cf18  \cf15 val\cf18  \cf5 /\cf18  \cf15 maxVal\cf18 ;\cf5 \cb1 \
+\cf18 \cb3     \cf5 \cb1 \
+\cf18 \cb3     \cf10 // T\uc0\u7921  \u273 \u7897 ng ph\'e2n b\u7889  m\'e0u s\u7855 c \u273 \u7853 m nh\u7841 t d\u7921 a tr\'ean d\u7919  li\u7879 u (t\u7881 nh n\'e0o nhi\u7873 u -> \u273 \u7853 m, \'edt -> nh\u7841 t)\cf5 \cb1 \
+\cf18 \cb3     \cf17 const\cf18  \cf16 hex\cf18  \cf5 =\cf18  (\cf20 c\cf18 ) \cf17 =>\cf18  \cf12 parseInt\cf18 (\cf20 c\cf18 .\cf16 slice\cf18 (\cf11 1\cf18 ), \cf11 16\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf17 const\cf18  \cf15 r1\cf18  \cf5 =\cf18  \cf16 hex\cf18 (\cf20 minColor\cf18 ) \cf5 >>\cf18  \cf11 16\cf18 , \cf15 g1\cf18  \cf5 =\cf18  (\cf16 hex\cf18 (\cf20 minColor\cf18 ) \cf5 >>\cf18  \cf11 8\cf18 ) \cf5 &\cf18  \cf11 0xff\cf18 , \cf15 b1\cf18  \cf5 =\cf18  \cf16 hex\cf18 (\cf20 minColor\cf18 ) \cf5 &\cf18  \cf11 0xff\cf18 ;\cf5 \cb1 \
+\cf18 \cb3     \cf17 const\cf18  \cf15 r2\cf18  \cf5 =\cf18  \cf16 hex\cf18 (\cf20 maxColor\cf18 ) \cf5 >>\cf18  \cf11 16\cf18 , \cf15 g2\cf18  \cf5 =\cf18  (\cf16 hex\cf18 (\cf20 maxColor\cf18 ) \cf5 >>\cf18  \cf11 8\cf18 ) \cf5 &\cf18  \cf11 0xff\cf18 , \cf15 b2\cf18  \cf5 =\cf18  \cf16 hex\cf18 (\cf20 maxColor\cf18 ) \cf5 &\cf18  \cf11 0xff\cf18 ;\cf5 \cb1 \
+\cf18 \cb3     \cf17 const\cf18  \cf15 r_c\cf18  \cf5 =\cf18  \cf15 Math\cf18 .\cf16 round\cf18 (\cf15 r1\cf18  \cf5 +\cf18  \cf15 norm\cf18  \cf5 *\cf18  (\cf15 r2\cf18  \cf5 -\cf18  \cf15 r1\cf18 ));\cf5 \cb1 \
+\cf18 \cb3     \cf17 const\cf18  \cf15 g_c\cf18  \cf5 =\cf18  \cf15 Math\cf18 .\cf16 round\cf18 (\cf15 g1\cf18  \cf5 +\cf18  \cf15 norm\cf18  \cf5 *\cf18  (\cf15 g2\cf18  \cf5 -\cf18  \cf15 g1\cf18 ));\cf5 \cb1 \
+\cf18 \cb3     \cf17 const\cf18  \cf15 b_c\cf18  \cf5 =\cf18  \cf15 Math\cf18 .\cf16 round\cf18 (\cf15 b1\cf18  \cf5 +\cf18  \cf15 norm\cf18  \cf5 *\cf18  (\cf15 b2\cf18  \cf5 -\cf18  \cf15 b1\cf18 ));\cf5 \cb1 \
+\cf18 \cb3     \cf17 const\cf18  \cf15 provColor\cf18  \cf5 =\cf18  \cf13 `#\cf7 $\{\cf5 (\cf11 1\cf5  << \cf11 24\cf5  | \cf15 r_c\cf5  << \cf11 16\cf5  | \cf15 g_c\cf5  << \cf11 8\cf5  | \cf15 b_c\cf5 ).\cf16 toString\cf5 (\cf11 16\cf5 ).\cf16 slice\cf5 (\cf11 1\cf5 )\cf7 \}\cf13 `\cf18 ;\cf5 \cb1 \
+\
+\cf18 \cb3     \cf17 const\cf18  [\cf15 cx\cf18 , \cf15 cy\cf18 ] \cf5 =\cf18  \cf16 toXY\cf18 (\cf20 prov\cf18 .lat, \cf20 prov\cf18 .lon);\cf5 \cb1 \
+\cf18 \cb3     \cf17 const\cf18  \cf15 r\cf18  \cf5 =\cf18  \cf11 10\cf18  \cf5 +\cf18  \cf15 norm\cf18  \cf5 *\cf18  \cf11 36\cf18 ;\cf5 \cb1 \
+\cf18 \cb3     \cf17 const\cf18  \cf15 outerR\cf18  \cf5 =\cf18  \cf15 r\cf18  \cf5 *\cf18  \cf11 2.0\cf18 ;\cf5 \cb1 \
+\
+\cf18 \cb3     \cf17 const\cf18  \cf15 g\cf18  \cf5 =\cf18  \cf15 document\cf18 .\cf16 createElementNS\cf18 (\cf15 ns\cf18 , \cf13 'g'\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 g\cf18 .\cf16 setAttribute\cf18 (\cf13 'class'\cf18 , \cf13 'prov-group'\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 g\cf18 .\cf15 dataset\cf18 .prov \cf5 =\cf18  \cf20 prov\cf18 .id;\cf5 \cb1 \
+\cf18 \cb3     \cf15 g\cf18 .\cf15 dataset\cf18 .period \cf5 =\cf18  \cf20 periodKey\cf18 ;\cf5 \cb1 \
+\
+\cf18 \cb3     \cf17 const\cf18  \cf15 gradId\cf18  \cf5 =\cf18  \cf13 `g-\cf7 $\{\cf20 svgEl\cf5 .\cf18 id\cf7 \}\cf13 -\cf7 $\{\cf20 prov\cf5 .\cf18 id\cf7 \}\cf13 `\cf18 ;\cf5 \cb1 \
+\cf18 \cb3     \cf17 const\cf18  \cf15 rg\cf18  \cf5 =\cf18  \cf15 document\cf18 .\cf16 createElementNS\cf18 (\cf15 ns\cf18 , \cf13 'radialGradient'\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 rg\cf18 .\cf16 setAttribute\cf18 (\cf13 'id'\cf18 , \cf15 gradId\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 rg\cf18 .\cf16 setAttribute\cf18 (\cf13 'cx'\cf18 , \cf13 '38%'\cf18 ); \cf15 rg\cf18 .\cf16 setAttribute\cf18 (\cf13 'cy'\cf18 , \cf13 '38%'\cf18 ); \cf15 rg\cf18 .\cf16 setAttribute\cf18 (\cf13 'r'\cf18 , \cf13 '62%'\cf18 );\cf5 \cb1 \
+\cf18 \cb3     [[\cf11 0\cf18 , \cf15 provColor\cf18 , \cf11 0.95\cf18 ], [\cf11 100\cf18 , \cf13 '#662200'\cf18 , \cf11 0.65\cf18 ]].\cf16 forEach\cf18 (([\cf20 off\cf18 , \cf20 col\cf18 , \cf20 op\cf18 ]) \cf17 =>\cf18  \{\cf5 \cb1 \
+\cf18 \cb3       \cf17 const\cf18  \cf15 s\cf18  \cf5 =\cf18  \cf15 document\cf18 .\cf16 createElementNS\cf18 (\cf15 ns\cf18 , \cf13 'stop'\cf18 );\cf5 \cb1 \
+\cf18 \cb3       \cf15 s\cf18 .\cf16 setAttribute\cf18 (\cf13 'offset'\cf18 , \cf20 off\cf18  \cf5 +\cf18  \cf13 '%'\cf18 );\cf5 \cb1 \
+\cf18 \cb3       \cf15 s\cf18 .\cf16 setAttribute\cf18 (\cf13 'stop-color'\cf18 , \cf20 col\cf18 );\cf5 \cb1 \
+\cf18 \cb3       \cf15 s\cf18 .\cf16 setAttribute\cf18 (\cf13 'stop-opacity'\cf18 , \cf20 op\cf18 );\cf5 \cb1 \
+\cf18 \cb3       \cf15 rg\cf18 .\cf16 appendChild\cf18 (\cf15 s\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \});\cf5 \cb1 \
+\cf18 \cb3     \cf15 defs\cf18 .\cf16 appendChild\cf18 (\cf15 rg\cf18 );\cf5 \cb1 \
+\
+\cf18 \cb3     \cf17 const\cf18  \cf15 haze\cf18  \cf5 =\cf18  \cf15 document\cf18 .\cf16 createElementNS\cf18 (\cf15 ns\cf18 , \cf13 'circle'\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 haze\cf18 .\cf16 setAttribute\cf18 (\cf13 'cx'\cf18 , \cf15 cx\cf18 ); \cf15 haze\cf18 .\cf16 setAttribute\cf18 (\cf13 'cy'\cf18 , \cf15 cy\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 haze\cf18 .\cf16 setAttribute\cf18 (\cf13 'r'\cf18 , \cf15 outerR\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 haze\cf18 .\cf16 setAttribute\cf18 (\cf13 'fill'\cf18 , \cf15 provColor\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 haze\cf18 .\cf16 setAttribute\cf18 (\cf13 'opacity'\cf18 , \cf11 0.15\cf18  \cf5 +\cf18  \cf15 norm\cf18  \cf5 *\cf18  \cf11 0.25\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 haze\cf18 .\cf16 setAttribute\cf18 (\cf13 'filter'\cf18 , \cf13 `url(#\cf7 $\{\cf15 blurId\cf7 \}\cf13 )`\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 haze\cf18 .\cf16 setAttribute\cf18 (\cf13 'class'\cf18 , \cf13 'prov-outer-glow'\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 g\cf18 .\cf16 appendChild\cf18 (\cf15 haze\cf18 );\cf5 \cb1 \
+\
+\cf18 \cb3     \cf17 const\cf18  \cf15 dot\cf18  \cf5 =\cf18  \cf15 document\cf18 .\cf16 createElementNS\cf18 (\cf15 ns\cf18 , \cf13 'circle'\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 dot\cf18 .\cf16 setAttribute\cf18 (\cf13 'cx'\cf18 , \cf15 cx\cf18 ); \cf15 dot\cf18 .\cf16 setAttribute\cf18 (\cf13 'cy'\cf18 , \cf15 cy\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 dot\cf18 .\cf16 setAttribute\cf18 (\cf13 'r'\cf18 , \cf15 r\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 dot\cf18 .\cf16 setAttribute\cf18 (\cf13 'fill'\cf18 , \cf13 `url(#\cf7 $\{\cf15 gradId\cf7 \}\cf13 )`\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 dot\cf18 .\cf16 setAttribute\cf18 (\cf13 'stroke'\cf18 , \cf15 provColor\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 dot\cf18 .\cf16 setAttribute\cf18 (\cf13 'stroke-width'\cf18 , \cf13 '1.5'\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 dot\cf18 .\cf16 setAttribute\cf18 (\cf13 'stroke-opacity'\cf18 , \cf13 '0.8'\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 dot\cf18 .\cf16 setAttribute\cf18 (\cf13 'class'\cf18 , \cf13 'prov-dot'\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 dot\cf18 .\cf15 style\cf18 .\cf16 setProperty\cf18 (\cf13 '--hover-r'\cf18 , \cf15 r\cf18  \cf5 +\cf18  \cf11 4\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 g\cf18 .\cf16 appendChild\cf18 (\cf15 dot\cf18 );\cf5 \cb1 \
+\
+\cf18 \cb3     \cf17 const\cf18  \cf15 ring\cf18  \cf5 =\cf18  \cf15 document\cf18 .\cf16 createElementNS\cf18 (\cf15 ns\cf18 , \cf13 'circle'\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 ring\cf18 .\cf16 setAttribute\cf18 (\cf13 'cx'\cf18 , \cf15 cx\cf18 ); \cf15 ring\cf18 .\cf16 setAttribute\cf18 (\cf13 'cy'\cf18 , \cf15 cy\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 ring\cf18 .\cf16 setAttribute\cf18 (\cf13 'r'\cf18 , \cf15 r\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 ring\cf18 .\cf16 setAttribute\cf18 (\cf13 'fill'\cf18 , \cf13 'none'\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 ring\cf18 .\cf16 setAttribute\cf18 (\cf13 'stroke'\cf18 , \cf15 provColor\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 ring\cf18 .\cf16 setAttribute\cf18 (\cf13 'stroke-width'\cf18 , \cf13 '2'\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 ring\cf18 .\cf16 setAttribute\cf18 (\cf13 'class'\cf18 , \cf13 'prov-ring'\cf18 );\cf5 \cb1 \
+\
+\cf18 \cb3     \cf17 const\cf18  \cf15 animR\cf18  \cf5 =\cf18  \cf15 document\cf18 .\cf16 createElementNS\cf18 (\cf15 ns\cf18 , \cf13 'animate'\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 animR\cf18 .\cf16 setAttribute\cf18 (\cf13 'attributeName'\cf18 , \cf13 'r'\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 animR\cf18 .\cf16 setAttribute\cf18 (\cf13 'from'\cf18 , \cf15 r\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 animR\cf18 .\cf16 setAttribute\cf18 (\cf13 'to'\cf18 , \cf15 r\cf18  \cf5 +\cf18  \cf11 20\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 animR\cf18 .\cf16 setAttribute\cf18 (\cf13 'dur'\cf18 , (\cf11 1.6\cf18  \cf5 +\cf18  (\cf11 1\cf18  \cf5 -\cf18  \cf15 norm\cf18 ) \cf5 *\cf18  \cf11 0.8\cf18 ) \cf5 +\cf18  \cf13 's'\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 animR\cf18 .\cf16 setAttribute\cf18 (\cf13 'repeatCount'\cf18 , \cf13 'indefinite'\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 animR\cf18 .\cf16 setAttribute\cf18 (\cf13 'begin'\cf18 , (\cf15 Math\cf18 .\cf16 random\cf18 () \cf5 *\cf18  \cf11 1.2\cf18 ) \cf5 +\cf18  \cf13 's'\cf18 );\cf5 \cb1 \
+\
+\cf18 \cb3     \cf17 const\cf18  \cf15 animO\cf18  \cf5 =\cf18  \cf15 document\cf18 .\cf16 createElementNS\cf18 (\cf15 ns\cf18 , \cf13 'animate'\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 animO\cf18 .\cf16 setAttribute\cf18 (\cf13 'attributeName'\cf18 , \cf13 'opacity'\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 animO\cf18 .\cf16 setAttribute\cf18 (\cf13 'from'\cf18 , \cf13 '0.7'\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 animO\cf18 .\cf16 setAttribute\cf18 (\cf13 'to'\cf18 , \cf13 '0'\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 animO\cf18 .\cf16 setAttribute\cf18 (\cf13 'dur'\cf18 , (\cf11 1.6\cf18  \cf5 +\cf18  (\cf11 1\cf18  \cf5 -\cf18  \cf15 norm\cf18 ) \cf5 *\cf18  \cf11 0.8\cf18 ) \cf5 +\cf18  \cf13 's'\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 animO\cf18 .\cf16 setAttribute\cf18 (\cf13 'repeatCount'\cf18 , \cf13 'indefinite'\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 animO\cf18 .\cf16 setAttribute\cf18 (\cf13 'begin'\cf18 , \cf15 animR\cf18 .\cf16 getAttribute\cf18 (\cf13 'begin'\cf18 ));\cf5 \cb1 \
+\
+\cf18 \cb3     \cf15 ring\cf18 .\cf16 appendChild\cf18 (\cf15 animR\cf18 ); \cf15 ring\cf18 .\cf16 appendChild\cf18 (\cf15 animO\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 g\cf18 .\cf16 appendChild\cf18 (\cf15 ring\cf18 );\cf5 \cb1 \
+\
+\cf18 \cb3     \cf17 const\cf18  \cf15 lv\cf18  \cf5 =\cf18  \cf15 document\cf18 .\cf16 createElementNS\cf18 (\cf15 ns\cf18 , \cf13 'text'\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 lv\cf18 .\cf16 setAttribute\cf18 (\cf13 'x'\cf18 , \cf15 cx\cf18 ); \cf15 lv\cf18 .\cf16 setAttribute\cf18 (\cf13 'y'\cf18 , \cf15 cy\cf18  \cf5 +\cf18  \cf11 3.5\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 lv\cf18 .\cf16 setAttribute\cf18 (\cf13 'text-anchor'\cf18 , \cf13 'middle'\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 lv\cf18 .\cf16 setAttribute\cf18 (\cf13 'class'\cf18 , \cf13 'prov-label-val'\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 lv\cf18 .\cf15 textContent\cf18  \cf5 =\cf18  \cf15 val\cf18 .\cf16 toFixed\cf18 (\cf11 1\cf18 ) \cf5 +\cf18  \cf13 'M'\cf18 ;\cf5 \cb1 \
+\cf18 \cb3     \cf15 g\cf18 .\cf16 appendChild\cf18 (\cf15 lv\cf18 );\cf5 \cb1 \
+\
+\cf18 \cb3     \cf17 const\cf18  \cf15 ln\cf18  \cf5 =\cf18  \cf15 document\cf18 .\cf16 createElementNS\cf18 (\cf15 ns\cf18 , \cf13 'text'\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 ln\cf18 .\cf16 setAttribute\cf18 (\cf13 'x'\cf18 , \cf15 cx\cf18 ); \cf15 ln\cf18 .\cf16 setAttribute\cf18 (\cf13 'y'\cf18 , \cf15 cy\cf18  \cf5 +\cf18  \cf15 r\cf18  \cf5 +\cf18  \cf11 11\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 ln\cf18 .\cf16 setAttribute\cf18 (\cf13 'text-anchor'\cf18 , \cf13 'middle'\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 ln\cf18 .\cf16 setAttribute\cf18 (\cf13 'class'\cf18 , \cf13 'prov-label-name'\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 ln\cf18 .\cf15 textContent\cf18  \cf5 =\cf18  \cf20 prov\cf18 .name;\cf5 \cb1 \
+\cf18 \cb3     \cf15 g\cf18 .\cf16 appendChild\cf18 (\cf15 ln\cf18 );\cf5 \cb1 \
+\
+\cf18 \cb3     \cf15 g\cf18 .\cf16 addEventListener\cf18 (\cf13 'mouseenter'\cf18 , (\cf20 e\cf18 ) \cf17 =>\cf18  \cf16 showTip\cf18 (\cf20 e\cf18 , \cf20 prov\cf18 , \cf20 periodKey\cf18 ));\cf5 \cb1 \
+\cf18 \cb3     \cf15 g\cf18 .\cf16 addEventListener\cf18 (\cf13 'mousemove'\cf18 , \cf16 moveTip\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 g\cf18 .\cf16 addEventListener\cf18 (\cf13 'mouseleave'\cf18 , \cf16 hideTip\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf15 g\cf18 .\cf16 addEventListener\cf18 (\cf13 'click'\cf18 , () \cf17 =>\cf18  \cf16 openModal\cf18 (\cf20 prov\cf18 ));\cf5 \cb1 \
+\
+\cf18 \cb3     \cf20 svgEl\cf18 .\cf16 appendChild\cf18 (\cf15 g\cf18 );\cf5 \cb1 \
+\cf18 \cb3   \});\cf5 \cb1 \
+\cf18 \cb3 \}\cf5 \cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 // \uc0\u9472 \u9472  SLIDER \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf17 \cb3 let\cf5  \cf18 current\cf5  = \cf11 0\cf5 ;\cb1 \
+\cf17 \cb3 function\cf5  \cf16 goSlide\cf5 (\cf20 idx\cf5 ) \cf18 \{\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf18 \cb3   current \cf5 =\cf18  \cf20 idx\cf18 ;\cf5 \cb1 \
+\cf18 \cb3   \cf15 document\cf18 .\cf16 getElementById\cf18 (\cf13 'sliderTrack'\cf18 ).\cf15 style\cf18 .\cf15 transform\cf18  \cf5 =\cb1 \
+\cf18 \cb3     \cf20 idx\cf18  \cf5 ===\cf18  \cf11 0\cf18  \cf5 ?\cf18  \cf13 'translateX(0)'\cf18  \cf5 :\cf18  \cf13 'translateX(-50%)'\cf18 ;\cf5 \cb1 \
+\cf18 \cb3   \cf15 document\cf18 .\cf16 getElementById\cf18 (\cf13 'tab0'\cf18 ).\cf15 classList\cf18 .\cf16 toggle\cf18 (\cf13 'active'\cf18 , \cf20 idx\cf18  \cf5 ===\cf18  \cf11 0\cf18 );\cf5 \cb1 \
+\cf18 \cb3   \cf15 document\cf18 .\cf16 getElementById\cf18 (\cf13 'tab1'\cf18 ).\cf15 classList\cf18 .\cf16 toggle\cf18 (\cf13 'active'\cf18 , \cf20 idx\cf18  \cf5 ===\cf18  \cf11 1\cf18 );\cf5 \cb1 \
+\cf18 \cb3   \cf15 document\cf18 .\cf16 getElementById\cf18 (\cf13 'prevBtn'\cf18 ).disabled \cf5 =\cf18  \cf20 idx\cf18  \cf5 ===\cf18  \cf11 0\cf18 ;\cf5 \cb1 \
+\cf18 \cb3   \cf15 document\cf18 .\cf16 getElementById\cf18 (\cf13 'nextBtn'\cf18 ).disabled \cf5 =\cf18  \cf20 idx\cf18  \cf5 ===\cf18  \cf11 1\cf18 ;\cf5 \cb1 \
+\cf18 \cb3   \cf15 document\cf18 .\cf16 querySelectorAll\cf18 (\cf13 '.nav-dot'\cf18 ).\cf16 forEach\cf18 ((\cf20 d\cf18 , \cf20 i\cf18 ) \cf17 =>\cf5 \cb1 \
+\cf18 \cb3     \cf20 d\cf18 .\cf15 classList\cf18 .\cf16 toggle\cf18 (\cf13 'active'\cf18 , \cf20 i\cf18  \cf5 ===\cf18  \cf20 idx\cf18 ));\cf5 \cb1 \
+\cf18 \cb3 \}\cf5 \cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf17 \cb3 let\cf5  \cf18 tX\cf5  = \cf11 0\cf5 ;\cb1 \
+\cf17 \cb3 const\cf5  \cf15 outer\cf5  = \cf15 document\cf5 .\cf16 getElementById\cf5 (\cf13 'sliderOuter'\cf5 );\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf15 \cb3 outer\cf5 .\cf16 addEventListener\cf5 (\cf13 'touchstart'\cf5 , \cf20 e\cf5  \cf17 =>\cf5  \cf18 \{ tX \cf5 =\cf18  \cf20 e\cf18 .\cf15 touches\cf18 [\cf11 0\cf18 ].\cf15 clientX\cf18 ; \}\cf5 , \{ \cf18 passive\cf19 :\cf18  \cf7 true\cf18  \cf5 \});\cb1 \
+\cf15 \cb3 outer\cf5 .\cf16 addEventListener\cf5 (\cf13 'touchend'\cf5 , \cf20 e\cf5  \cf17 =>\cf5  \cf18 \{\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf18 \cb3   \cf17 const\cf18  \cf15 dx\cf18  \cf5 =\cf18  \cf20 e\cf18 .\cf15 changedTouches\cf18 [\cf11 0\cf18 ].\cf15 clientX\cf18  \cf5 -\cf18  tX;\cf5 \cb1 \
+\cf18 \cb3   \cf14 if\cf18  (\cf15 Math\cf18 .\cf16 abs\cf18 (\cf15 dx\cf18 ) \cf5 >\cf18  \cf11 45\cf18 ) \{\cf5 \cb1 \
+\cf18 \cb3     \cf14 if\cf18  (\cf15 dx\cf18  \cf5 <\cf18  \cf11 0\cf18  \cf5 &&\cf18  current \cf5 ===\cf18  \cf11 0\cf18 ) \cf16 goSlide\cf18 (\cf11 1\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf14 else\cf18  \cf14 if\cf18  (\cf15 dx\cf18  \cf5 >\cf18  \cf11 0\cf18  \cf5 &&\cf18  current \cf5 ===\cf18  \cf11 1\cf18 ) \cf16 goSlide\cf18 (\cf11 0\cf18 );\cf5 \cb1 \
+\cf18 \cb3   \}\cf5 \cb1 \
+\cf18 \cb3 \}\cf5 );\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 // \uc0\u9472 \u9472  TOOLTIP \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf17 \cb3 const\cf5  \cf15 tip\cf5  = \cf15 document\cf5 .\cf16 getElementById\cf5 (\cf13 'tooltip'\cf5 );\cb1 \
+\
+\cf17 \cb3 function\cf5  \cf16 showTip\cf5 (\cf20 e\cf5 , \cf20 prov\cf5 , \cf20 periodKey\cf5 ) \cf18 \{\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf18 \cb3   \cf17 const\cf18  \cf15 val\cf18  \cf5 =\cf18  \cf20 prov\cf18 [\cf20 periodKey\cf18 ];\cf5 \cb1 \
+\cf18 \cb3   \cf17 let\cf18  htmlStr \cf5 =\cf18  \cf13 ''\cf18 ;\cf5 \cb1 \
+\
+\cf18 \cb3   \cf14 if\cf18  (\cf20 periodKey\cf18  \cf5 ===\cf18  \cf13 'p1'\cf18 ) \{\cf5 \cb1 \
+\cf18 \cb3     \cf10 // 2014 - 2019 Format\cf5 \cb1 \
+\cf18 \cb3     \cf17 const\cf18  \cf15 diff\cf18  \cf5 =\cf18  \cf15 Math\cf18 .\cf16 abs\cf18 (\cf20 prov\cf18 .p1 \cf5 -\cf18  \cf20 prov\cf18 .p2).\cf16 toFixed\cf18 (\cf11 2\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf17 const\cf18  \cf15 trend\cf18  \cf5 =\cf18  \cf20 prov\cf18 .p2 \cf5 <\cf18  \cf20 prov\cf18 .p1 \cf5 ?\cf18  \cf13 "gi\uc0\u7843 m"\cf18  \cf5 :\cf18  \cf13 "t\uc0\u259 ng"\cf18 ;\cf5 \cb1 \
+\cf18 \cb3     htmlStr \cf5 =\cf18  \cf13 `\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf13 \cb3       <div class="tt-line1">\cf7 $\{\cf20 prov\cf5 .\cf18 name\cf7 \}\cf13  \cf7 $\{\cf15 val\cf5 .\cf16 toFixed\cf5 (\cf11 2\cf5 )\cf7 \}\cf13  tri\uc0\u7879 u ng\u432 \u7901 i</div>\cf5 \cb1 \
+\cf13 \cb3       <div class="tt-line2">so v\uc0\u7899 i 2019-2024 th\'ec \cf7 $\{\cf15 trend\cf7 \}\cf13  \cf7 $\{\cf15 diff\cf7 \}\cf13  tri\uc0\u7879 u ng\u432 \u7901 i</div>\cf5 \cb1 \
+\cf13 \cb3     `\cf18 ;\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf18 \cb3   \} \cf14 else\cf18  \{\cf5 \cb1 \
+\cf18 \cb3     \cf10 // 2019 - 2024 Format\cf5 \cb1 \
+\cf18 \cb3     \cf17 const\cf18  \cf15 pct\cf18  \cf5 =\cf18  \cf15 Math\cf18 .\cf16 abs\cf18 ((\cf20 prov\cf18 .p2 \cf5 -\cf18  \cf20 prov\cf18 .p1) \cf5 /\cf18  \cf20 prov\cf18 .p1 \cf5 *\cf18  \cf11 100\cf18 ).\cf16 toFixed\cf18 (\cf11 0\cf18 );\cf5 \cb1 \
+\cf18 \cb3     \cf17 const\cf18  \cf15 trend\cf18  \cf5 =\cf18  \cf20 prov\cf18 .p2 \cf5 <\cf18  \cf20 prov\cf18 .p1 \cf5 ?\cf18  \cf13 "Gi\uc0\u7843 m"\cf18  \cf5 :\cf18  \cf13 "T\uc0\u259 ng"\cf18 ;\cf5 \cb1 \
+\cf18 \cb3     htmlStr \cf5 =\cf18  \cf13 `\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf13 \cb3       <div class="tt-line1">\cf7 $\{\cf20 prov\cf5 .\cf18 name\cf7 \}\cf13  \cf7 $\{\cf15 val\cf5 .\cf16 toFixed\cf5 (\cf11 2\cf5 )\cf7 \}\cf13  tri\uc0\u7879 u ng\u432 \u7901 i</div>\cf5 \cb1 \
+\cf13 \cb3       <div class="tt-line2">\cf7 $\{\cf15 trend\cf7 \}\cf13  <strong class="tt-hl">\cf7 $\{\cf15 pct\cf7 \}\cf13 %</strong> so v\uc0\u7899 i giai \u273 o\u7841 n 2014-2019</div>\cf5 \cb1 \
+\cf13 \cb3     `\cf18 ;\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf18 \cb3   \}\cf5 \cb1 \
+\
+\cf18 \cb3   \cf15 tip\cf18 .\cf15 innerHTML\cf18  \cf5 =\cf18  htmlStr;\cf5 \cb1 \
+\cf18 \cb3   \cf15 tip\cf18 .\cf15 classList\cf18 .\cf16 add\cf18 (\cf13 'show'\cf18 );\cf5 \cb1 \
+\cf18 \cb3   \cf16 _moveTip\cf18 (\cf20 e\cf18 .clientX, \cf20 e\cf18 .clientY);\cf5 \cb1 \
+\cf18 \cb3 \}\cf5 \cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf17 \cb3 function\cf5  \cf16 moveTip\cf5 (\cf20 e\cf5 ) \cf18 \{ \cf16 _moveTip\cf18 (\cf20 e\cf18 .clientX, \cf20 e\cf18 .clientY); \}\cf5 \cb1 \
+\cf17 \cb3 function\cf5  \cf16 _moveTip\cf5 (\cf20 mx\cf5 , \cf20 my\cf5 ) \cf18 \{\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf18 \cb3   \cf17 const\cf18  \cf15 W\cf18  \cf5 =\cf18  \cf11 280\cf18 , \cf15 H\cf18  \cf5 =\cf18  \cf11 80\cf18 , \cf15 m\cf18  \cf5 =\cf18  \cf11 14\cf18 ;\cf5 \cb1 \
+\cf18 \cb3   \cf17 let\cf18  x \cf5 =\cf18  \cf20 mx\cf18  \cf5 +\cf18  \cf15 m\cf18 , y \cf5 =\cf18  \cf20 my\cf18  \cf5 +\cf18  \cf15 m\cf18 ;\cf5 \cb1 \
+\cf18 \cb3   \cf14 if\cf18  (x \cf5 +\cf18  \cf15 W\cf18  \cf5 >\cf18  \cf15 window\cf18 .\cf15 innerWidth\cf18 ) x \cf5 =\cf18  \cf20 mx\cf18  \cf5 -\cf18  \cf15 W\cf18  \cf5 -\cf18  \cf15 m\cf18 ;\cf5 \cb1 \
+\cf18 \cb3   \cf14 if\cf18  (y \cf5 +\cf18  \cf15 H\cf18  \cf5 >\cf18  \cf15 window\cf18 .\cf15 innerHeight\cf18 ) y \cf5 =\cf18  \cf20 my\cf18  \cf5 -\cf18  \cf15 H\cf18  \cf5 -\cf18  \cf15 m\cf18 ;\cf5 \cb1 \
+\cf18 \cb3   \cf15 tip\cf18 .\cf15 style\cf18 .\cf15 left\cf18  \cf5 =\cf18  x \cf5 +\cf18  \cf13 'px'\cf18 ;\cf5 \cb1 \
+\cf18 \cb3   \cf15 tip\cf18 .\cf15 style\cf18 .\cf15 top\cf18   \cf5 =\cf18  y \cf5 +\cf18  \cf13 'px'\cf18 ;\cf5 \cb1 \
+\cf18 \cb3 \}\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf17 \cb3 function\cf5  \cf16 hideTip\cf5 () \cf18 \{ \cf15 tip\cf18 .\cf15 classList\cf18 .\cf16 remove\cf18 (\cf13 'show'\cf18 ); \}\cf5 \cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 // \uc0\u9472 \u9472  MODAL \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf17 \cb3 const\cf5  \cf15 MAX_VAL\cf5  = \cf11 1.6\cf5 ;\cb1 \
+\
+\cf17 \cb3 function\cf5  \cf16 openModal\cf5 (\cf20 prov\cf5 ) \cf18 \{\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf18 \cb3   \cf15 document\cf18 .\cf16 getElementById\cf18 (\cf13 'mCity'\cf18 ).\cf15 textContent\cf18  \cf5 =\cf18  \cf20 prov\cf18 .name;\cf5 \cb1 \
+\cf18 \cb3   \cf15 document\cf18 .\cf16 getElementById\cf18 (\cf13 'mV1'\cf18 ).\cf15 textContent\cf18  \cf5 =\cf18  \cf20 prov\cf18 .p1.\cf16 toFixed\cf18 (\cf11 2\cf18 ) \cf5 +\cf18  \cf13 ' tri\uc0\u7879 u ng\u432 \u7901 i'\cf18 ;\cf5 \cb1 \
+\cf18 \cb3   \cf15 document\cf18 .\cf16 getElementById\cf18 (\cf13 'mV2'\cf18 ).\cf15 textContent\cf18  \cf5 =\cf18  \cf20 prov\cf18 .p2.\cf16 toFixed\cf18 (\cf11 2\cf18 ) \cf5 +\cf18  \cf13 ' tri\uc0\u7879 u ng\u432 \u7901 i'\cf18 ;\cf5 \cb1 \
+\
+\cf18 \cb3   \cf17 const\cf18  \cf15 pct\cf18  \cf5 =\cf18  \cf15 Math\cf18 .\cf16 round\cf18 ((\cf20 prov\cf18 .p2 \cf5 -\cf18  \cf20 prov\cf18 .p1) \cf5 /\cf18  \cf20 prov\cf18 .p1 \cf5 *\cf18  \cf11 100\cf18 );\cf5 \cb1 \
+\cf18 \cb3   \cf17 const\cf18  \cf15 sign\cf18  \cf5 =\cf18  \cf15 pct\cf18  \cf5 >\cf18  \cf11 0\cf18  \cf5 ?\cf18  \cf13 '\uc0\u9650  +'\cf18  \cf5 :\cf18  \cf13 '\uc0\u9660  '\cf18 ;\cf5 \cb1 \
+\cf18 \cb3   \cf17 const\cf18  \cf15 cls\cf18  \cf5 =\cf18  \cf15 pct\cf18  \cf5 >\cf18  \cf11 0\cf18  \cf5 ?\cf18  \cf13 'up'\cf18  \cf5 :\cf18  \cf15 pct\cf18  \cf5 ===\cf18  \cf11 0\cf18  \cf5 ?\cf18  \cf13 'eq'\cf18  \cf5 :\cf18  \cf13 'down'\cf18 ;\cf5 \cb1 \
+\cf18 \cb3   \cf15 document\cf18 .\cf16 getElementById\cf18 (\cf13 'mDelta'\cf18 ).\cf15 className\cf18  \cf5 =\cf18  \cf13 'modal-delta '\cf18  \cf5 +\cf18  \cf15 cls\cf18 ;\cf5 \cb1 \
+\cf18 \cb3   \cf15 document\cf18 .\cf16 getElementById\cf18 (\cf13 'mDelta'\cf18 ).\cf15 textContent\cf18  \cf5 =\cf18  \cf15 sign\cf18  \cf5 +\cf18  \cf15 Math\cf18 .\cf16 abs\cf18 (\cf15 pct\cf18 ) \cf5 +\cf18  \cf13 '% so v\uc0\u7899 i giai \u273 o\u7841 n tr\u432 \u7899 c'\cf18 ;\cf5 \cb1 \
+\cf18 \cb3   \cf15 document\cf18 .\cf16 getElementById\cf18 (\cf13 'mInsight'\cf18 ).\cf15 innerHTML\cf18  \cf5 =\cf18  \cf20 prov\cf18 .insight;\cf5 \cb1 \
+\
+\cf18 \cb3   \cf15 document\cf18 .\cf16 getElementById\cf18 (\cf13 'mBar1'\cf18 ).\cf15 style\cf18 .\cf15 width\cf18  \cf5 =\cf18  \cf13 '0'\cf18 ;\cf5 \cb1 \
+\cf18 \cb3   \cf15 document\cf18 .\cf16 getElementById\cf18 (\cf13 'mBar2'\cf18 ).\cf15 style\cf18 .\cf15 width\cf18  \cf5 =\cf18  \cf13 '0'\cf18 ;\cf5 \cb1 \
+\cf18 \cb3   \cf15 document\cf18 .\cf16 getElementById\cf18 (\cf13 'modalBg'\cf18 ).\cf15 classList\cf18 .\cf16 add\cf18 (\cf13 'open'\cf18 );\cf5 \cb1 \
+\
+\cf18 \cb3   \cf12 setTimeout\cf18 (() \cf17 =>\cf18  \{\cf5 \cb1 \
+\cf18 \cb3     \cf15 document\cf18 .\cf16 getElementById\cf18 (\cf13 'mBar1'\cf18 ).\cf15 style\cf18 .\cf15 width\cf18  \cf5 =\cf18  (\cf20 prov\cf18 .p1 \cf5 /\cf18  \cf15 MAX_VAL\cf18  \cf5 *\cf18  \cf11 100\cf18 ) \cf5 +\cf18  \cf13 '%'\cf18 ;\cf5 \cb1 \
+\cf18 \cb3     \cf15 document\cf18 .\cf16 getElementById\cf18 (\cf13 'mBar2'\cf18 ).\cf15 style\cf18 .\cf15 width\cf18  \cf5 =\cf18  (\cf20 prov\cf18 .p2 \cf5 /\cf18  \cf15 MAX_VAL\cf18  \cf5 *\cf18  \cf11 100\cf18 ) \cf5 +\cf18  \cf13 '%'\cf18 ;\cf5 \cb1 \
+\cf18 \cb3   \}, \cf11 60\cf18 );\cf5 \cb1 \
+\cf18 \cb3 \}\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf17 \cb3 function\cf5  \cf16 closeModal\cf5 () \cf18 \{\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf18 \cb3   \cf15 document\cf18 .\cf16 getElementById\cf18 (\cf13 'modalBg'\cf18 ).\cf15 classList\cf18 .\cf16 remove\cf18 (\cf13 'open'\cf18 );\cf5 \cb1 \
+\cf18 \cb3 \}\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf17 \cb3 function\cf5  \cf16 handleModalBgClick\cf5 (\cf20 e\cf5 ) \cf18 \{\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf18 \cb3   \cf14 if\cf18  (\cf20 e\cf18 .target \cf5 ===\cf18  \cf15 document\cf18 .\cf16 getElementById\cf18 (\cf13 'modalBg'\cf18 )) \cf16 closeModal\cf18 ();\cf5 \cb1 \
+\cf18 \cb3 \}\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf15 \cb3 document\cf5 .\cf16 addEventListener\cf5 (\cf13 'keydown'\cf5 , \cf20 e\cf5  \cf17 =>\cf5  \cf18 \{ \cf14 if\cf18  (\cf20 e\cf18 .\cf15 key\cf18  \cf5 ===\cf18  \cf13 'Escape'\cf18 ) \cf16 closeModal\cf18 (); \}\cf5 );\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 // \uc0\u9472 \u9472  INIT \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf17 \cb3 const\cf5  \cf15 s0\cf5  = \cf15 document\cf5 .\cf16 getElementById\cf5 (\cf13 'map0'\cf5 );\cb1 \
+\cf17 \cb3 const\cf5  \cf15 s1\cf5  = \cf15 document\cf5 .\cf16 getElementById\cf5 (\cf13 'map1'\cf5 );\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 // \'c1p d\uc0\u7909 ng m\'e0u cam cho c\u7843  2 b\u7843 n \u273 \u7891 : Nh\u7841 t (#ffe0b2) -> \u272 \u7853 m (#e65100)\cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf16 \cb3 drawMap\cf5 (\cf15 s0\cf5 , \cf13 'p1'\cf5 , \cf13 '#ffe0b2'\cf5 , \cf13 '#e65100'\cf5 );\cb1 \
+\cf16 \cb3 drawMap\cf5 (\cf15 s1\cf5 , \cf13 'p2'\cf5 , \cf13 '#ffe0b2'\cf5 , \cf13 '#e65100'\cf5 );\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 </\cf4 script\cf2 >\cf5 \cb1 \
+\cf2 \cb3 </\cf4 body\cf2 >\cf5 \cb1 \
+\cf2 \cb3 </\cf4 html\cf2 >\cf5 \cb1 \
+}
